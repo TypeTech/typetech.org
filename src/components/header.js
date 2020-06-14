@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Logomain from "./logomain"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, description }) => (
   <header
     style={{
       background: `gray`,
@@ -11,30 +11,22 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <nav>
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <div
-          className="logo"
-        >
-          <Logomain />
+        <div className="logo">
+          <Logomain /><div>         
+          </div>
         </div>
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </h1>
-      </div>
+        <div>
+          {siteTitle}
+          {description}
+        </div>
+        <ul className="nav-links">
+          <Link className="nav-items" to="page-2">Hola</Link>
+          <Link className="nav-items" to="page-2"></Link>
+          <Link className="nav-items" to="page-2">Hola</Link>
+          <Link className="nav-items" to="page-2">Hola</Link>
+          <Link className="nav-items" to="page-2">Hola</Link>
+        </ul>
+     
     </nav>
   </header>
 )

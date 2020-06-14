@@ -2,10 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
   }
   
   footer{
+    
     width: 100%;
     background:#66ccff;
     color: white;
@@ -99,7 +99,9 @@
   
   .container-footer{
     width: 100%;
-    background:  #333333;
+    background:  #ffff;
+    
+    
   }
   
   .footer{
