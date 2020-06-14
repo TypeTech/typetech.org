@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
-          description
+          location
         }
       }
     }
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} description={data.site.siteMetadata.description} />
+      <Header siteTitle={data.site.siteMetadata.title} location={data.site.siteMetadata.location} />
       <div
         style={{
           margin: `0 auto`,

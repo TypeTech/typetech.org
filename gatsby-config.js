@@ -3,6 +3,7 @@ module.exports = {
     title: `TypeTech`,
     description: `We are TypeTech, a group of devs dedicated to Open Sourcing and freelancing software with cutting edge technologies`,
     author: `@typetech`,
+    location:`Alajuela, Costa Rica 🌎`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/typetechmain.png`, // This path is relative to the root of the site.
+        icon: `src/images/typetechlogo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -7,12 +7,12 @@
   footer{
     
     width: 100%;
-    background:#66ccff;
+    background:#4C9AC0;
     color: white;
-    height: 75px;
+    height: 10vh;
     bottom: 0;
     /*When content is placed position is deleted*/
-    position:fixed;
+    position: fixed;
   
   }
   .center{
@@ -24,9 +24,9 @@
   }
   .container-footer-all{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1200vh;
     margin: auto;
-    padding: 40px;
+    padding: 1vmax;
   }
   
   .container-body{
@@ -35,7 +35,7 @@
   }
   
   .colum1{
-    max-width: 400px;
+    max-width: 40vh;
   }
   
   .colum1 h1{
@@ -99,7 +99,8 @@
   
   .container-footer{
     width: 100%;
-    background:  #ffff;
+    height: 10vh;
+    background:  #333333;
     
     
   }
