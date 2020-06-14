@@ -3,7 +3,7 @@ module.exports = {
     title: `TypeTech`,
     description: `We are TypeTech, a group of devs dedicated to Open Sourcing and freelancing software with cutting edge technologies`,
     author: `@typetech`,
-    location:`Alajuela, Costa Rica 🌎`
+    location:`Currently outsourcing only in the Americas 🌎`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

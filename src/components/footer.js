@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import "./footer.css"
 import Logomain from "./logomain"
 
 const Footer = ({ siteTitle }) => {

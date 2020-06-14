@@ -35,7 +35,7 @@ const Header = ({ siteTitle, location }) => (
       </header>
     </div>
     <div className="undernav">
-      <h2>We are located in {location}</h2>
+      <h3>{location}</h3>
     </div>
   </Fragment>
 )
