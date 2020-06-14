@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "@emotion/styled"
-import Logomain from "../components/logomain"
 
 const MainDiv = styled.div`
   display:flex;
