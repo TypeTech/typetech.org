@@ -8,7 +8,9 @@ import CardLogo from "./Reusable/CardLogo"
 
 const Principles = () => {
   return (
-    <section>
+    <section style={{
+      paddingBottom:100
+    }}>
       <ContainerDiv>
         <h2>
           Our <SpanP>principles</SpanP>
