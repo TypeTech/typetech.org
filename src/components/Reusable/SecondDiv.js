@@ -5,6 +5,7 @@ const SecondDiv = styled.div`
   width: 1140px;
   max-width: 100%;
   display: block;
+  text-align:center;
 `;
 
 export default SecondDiv;

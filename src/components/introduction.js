@@ -3,7 +3,6 @@ import styled from "@emotion/styled"
 import MainDiv from "./Reusable/MainDiv"
 import SecondDiv from "./Reusable/SecondDiv"
 
-
 const TitleDiv = styled.div`
   font-size: 4em;
   font-weight: bold;
@@ -12,11 +11,12 @@ const TitleDiv = styled.div`
 `
 
 const DescriptionDiv = styled.div`
-  max-width: 800px;
+  max-width: 100%;
   color: #ffffff;
   margin-top: 40px;
   font-size: 1.5em;
 `
+
 
 const Introduction = () => {
   return (
