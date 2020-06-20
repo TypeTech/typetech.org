@@ -43,7 +43,7 @@ nav{
 .nav-items{
   text-decoration: none;
   font-size: medium;
-  color:gray;
+  color:#ffff;
   transition: 0.2s ease;
 }
 
@@ -211,6 +211,8 @@ footer{
   text-decoration: none;
   color: #C7C7C7;
 }
+
+
 
 
 @media screen and (max-width: 1100px){
