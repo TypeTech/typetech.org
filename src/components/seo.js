@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `TypeTech - Group of devs dedicated to Open Sourcing and freelancing software with cutting edge technologies`,
 }
 
 SEO.propTypes = {
