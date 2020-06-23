@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 const BottomMovement = styled.div`
-  animation: move 60s linear infinite;
+  animation: move 300s linear infinite;
   animation-fill-mode: forwards;
   transform: translate3d(0, 0, 0);
 

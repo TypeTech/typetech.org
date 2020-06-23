@@ -1,9 +1,6 @@
 import React from "react"
 import SpanP from "./Reusable/SpanP"
 import styled from "@emotion/styled"
-import GridDiv from "./Reusable/GridDiv"
-import CardContainer from "./Reusable/CardContainer"
-import CardContent from "./Reusable/CardContent"
 
 const Spanx = styled.span`
   color: #ffffff;

@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 const TopMovement = styled.div`
-  animation: slide 60s linear infinite;
+  animation: slide 300s linear infinite;
   animation-fill-mode: forwards;
   transform: translate3d(0, 0, 0);
 
