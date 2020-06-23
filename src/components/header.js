@@ -34,9 +34,9 @@ const Header = ({ siteTitle, location }) => (
         </nav>
       </header>
     </div>
-    <div className="undernav">
+    {/* <div className="undernav">
       <h3>{location}</h3>
-    </div>
+    </div> */}
   </Fragment>
 )
 

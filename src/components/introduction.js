@@ -4,17 +4,31 @@ import MainDiv from "./Reusable/MainDiv"
 import SecondDiv from "./Reusable/SecondDiv"
 
 const TitleDiv = styled.div`
-  font-size: 4em;
+  display:flex;
+  font-size: 4rem;
   font-weight: bold;
   color: #ffffff;
   text-shadow: 5px 5px #1476a2;
+
+  @media screen and (max-width:760px) {
+    font-size: 2.2em;
+    text-align: center;
+  }
 `
 
 const DescriptionDiv = styled.div`
+display:flex;
   max-width: 100%;
   color: #ffffff;
   margin-top: 40px;
   font-size: 1.5em;
+
+  @media screen and (max-width:500px) {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 `
 
 
