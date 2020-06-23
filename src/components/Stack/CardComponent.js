@@ -3,14 +3,13 @@ import "./stack.css"
 
 const Card = ({ image, title, description }) => {
   return (
-    <div class="courses-container">
-      <div class="stacklogo">
-        <div class="course-preview">
+    <div className="courses-container">
+      <div className="stacklogo">
+        <div className="course-preview">
           <img src={image} alt="react-logo" className="logo" />
-          <a href="#"></a>
         </div>
-        <div class="course-info">
-          <div class="progress-container"></div>
+        <div className="course-info">
+          <div className="progress-container"></div>
           <h2>{title}</h2>
           <p>{description}</p>
         </div>

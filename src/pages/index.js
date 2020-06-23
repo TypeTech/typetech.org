@@ -9,10 +9,10 @@ import TechStack from "../components/techstack"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Introduction/>
-    <Principles/>
-    <Services/>
-    <TechStack/>
+    <Introduction />
+    <Principles />
+    <Services />
+    <TechStack />
   </Layout>
 )
 
