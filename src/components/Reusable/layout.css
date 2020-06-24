@@ -26,9 +26,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-width: 1vh;
-  height: 7vh;
+  height: 10vh;
   background-color: #333333;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -55,6 +54,8 @@ nav {
 .logo {
   width: 60px;
   font-size: 1.2rem;
+  height: 3em;
+    vertical-align: middle;
 }
 .title {
   position: relative;
@@ -66,6 +67,16 @@ nav {
 }
 .logocontainer {
   display: flex;
+}
+
+@media (max-width: 760px){
+  .logocontainer{
+    margin-right: auto;
+    padding: 1em;
+  }
+  .logo{
+    width: 100%;
+  }
 }
 
 .undernav {

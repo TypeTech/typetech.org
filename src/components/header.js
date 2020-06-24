@@ -2,14 +2,19 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { Fragment } from "react"
 import Logomain from "./logomain"
+import styled from "@emotion/styled"
+
+const WrapperDiv=styled.div`
+  display:block;
+`
 
 const Header = ({ siteTitle, location }) => (
   <Fragment>
-    <div>
+    <WrapperDiv>
       <header
         style={{
           background: `gray`,
-          marginBottom: `1.45rem`,
+          display:`block`,
         }}
       >
         <nav>
@@ -33,7 +38,7 @@ const Header = ({ siteTitle, location }) => (
           </ul>
         </nav>
       </header>
-    </div>
+    </WrapperDiv>
     {/* <div className="undernav">
       <h3>{location}</h3>
     </div> */}
