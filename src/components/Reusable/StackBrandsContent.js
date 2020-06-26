@@ -10,7 +10,7 @@ const StackBrandsContent = styled.div`
   }
 
   width: 100%;
-  height: 700px;
+  height: 800px;
   position: relative;
   left: 50px;
   display: block;

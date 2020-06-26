@@ -12,6 +12,8 @@ import FirstRow from "./FirstRow"
 import SecondRow from "./SecondRow"
 import ThirdRow from "./ThirdRow"
 import FourthRow from "./FourthRow"
+import SectionDesc from "../components/Reusable/SectionDesc"
+import SectionParagraph from "./Reusable/SectionParagraph"
 
 const CardDiv = styled.div`
   display: flex;
@@ -29,6 +31,13 @@ const TechStack = () => {
           Our <SpanP>Tech</SpanP> Stack
         </h2>
       </ContainerDiv>
+      <SectionDesc>
+        <SectionParagraph>
+          Technologies we are proficient with, the use for each project might
+          vary upon the clients requirements.
+          <br />
+        </SectionParagraph>
+      </SectionDesc>
       <StackContainer>
         <StackBrandsContainer>
           <StackBrandsContent>
@@ -55,6 +64,13 @@ const TechStack = () => {
           </StackBrandsContent>
         </StackBrandsContainer>
       </StackContainer>
+      <SectionDesc>
+        <SectionParagraph>
+          Other technologies such as cloud providers and server deployment
+          services can be analyzed depending on the use of the application being
+          built.
+        </SectionParagraph>
+      </SectionDesc>
     </section>
   )
 }
