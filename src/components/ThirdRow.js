@@ -23,6 +23,17 @@ const ThirdRow = () => {
         title=".NET Core"
         description="Backend development"
       />
+            <Card
+        image={laravelLogo}
+        title="Laravel"
+        description="Backend development"
+      />
+      <Card image={nodeLogo} title="NodeJS" description="Backend development" />
+      <Card
+        image={dotnetLogo}
+        title=".NET Core"
+        description="Backend development"
+      />
       <Card
         image={laravelLogo}
         title="Laravel"

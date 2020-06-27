@@ -37,6 +37,21 @@ const SecondRow = () => {
         title="Vercel"
         description="Frontend Deployment/hosting service"
       />
+            <Card
+        image={angularLogo}
+        title="Angular 9"
+        description="Frontend development"
+      />
+      <Card
+        image={netlifylogo}
+        title="Netlify"
+        description="Frontend Deployment/hosting service"
+      />
+      <Card
+        image={vercellogo}
+        title="Vercel"
+        description="Frontend Deployment/hosting service"
+      />
     </Fragment>
   )
 }

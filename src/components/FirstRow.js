@@ -21,6 +21,13 @@ const FirstRow = () => {
       />
       <Card image={nextjs} title="Nextjs" description="Frontend development" />
       <Card image={gatsby} title="Gatsby" description="Frontend development" />
+      <Card
+        image={reactLogo}
+        title="React"
+        description="Frontend development"
+      />
+      <Card image={nextjs} title="Nextjs" description="Frontend development" />
+      <Card image={gatsby} title="Gatsby" description="Frontend development" />
     </Fragment>
   )
 }

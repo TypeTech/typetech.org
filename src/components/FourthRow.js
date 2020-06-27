@@ -37,6 +37,21 @@ const FourthRow = () => {
         title="MySQL"
         description="Databases management"
       />
+            <Card
+        image={expressLogo}
+        title="Express"
+        description="Backend development"
+      />
+      <Card
+        image={postgLogo}
+        title="PostgreSQL"
+        description="Databases management"
+      />
+      <Card
+        image={mysqlLogo}
+        title="MySQL"
+        description="Databases management"
+      />
     </Fragment>
   )
 }
