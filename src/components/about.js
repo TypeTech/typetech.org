@@ -27,6 +27,7 @@ const About = () => {
                 <Spanx>Meet</Spanx><SpanP> us</SpanP>
             </h2>
         </Container>
+
     </section>
   )
 }

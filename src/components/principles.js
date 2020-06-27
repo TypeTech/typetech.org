@@ -8,9 +8,11 @@ import CardLogo from "./Reusable/CardLogo"
 
 const Principles = () => {
   return (
-    <section style={{
-      paddingBottom:100
-    }}>
+    <section
+      style={{
+        paddingBottom: 100,
+      }}
+    >
       <ContainerDiv>
         <h2>
           Our <SpanP>principles</SpanP>
@@ -32,7 +34,7 @@ const Principles = () => {
             <h1>Security</h1>
             <p>
               Our vision in development is to have secure apps to our clients
-              and their services
+              and their services.
             </p>
           </CardContent>
         </CardContainer>
@@ -50,7 +52,7 @@ const Principles = () => {
             </CardLogo>
             <h1>Performance</h1>
             <p>
-              Having fast and reliable applications to guarantee the efficiency{" "}
+              Having fast and reliable applications to guarantee the efficiency.
             </p>
           </CardContent>
         </CardContainer>
@@ -69,24 +71,21 @@ const Principles = () => {
             <h1>Testing</h1>
             <p>
               Going througt multiple testing sessions before going into
-              production to deploy great quality software
+              production to deploy great quality software.
             </p>
           </CardContent>
         </CardContainer>
         <CardContainer>
           <CardContent>
             <CardLogo>
-              <svg
-                width="24"
-                height="24"
-              >
+              <svg width="24" height="24">
                 <path d="M6.72 20.492c1.532.956 3.342 1.508 5.28 1.508 1.934 0 3.741-.55 5.272-1.503l1.24 1.582c-1.876 1.215-4.112 1.921-6.512 1.921-2.403 0-4.642-.708-6.52-1.926l1.24-1.582zm6.405-.992l-.594.391c-.077.069-.19.109-.307.109h-.447c-.118 0-.231-.04-.308-.109l-.594-.391h2.25zm10.875-.5h-6c0-1.105.895-2 2-2h2c.53 0 1.039.211 1.414.586s.586.883.586 1.414zm-18 0h-6c0-1.105.895-2 2-2h2c.53 0 1.039.211 1.414.586s.586.883.586 1.414zm7.146-.5c.138 0 .25.112.25.25s-.112.25-.25.25h-2.279c-.138 0-.25-.112-.25-.25s.112-.25.25-.25h2.279zm.247-.5c0-2.002 1.607-2.83 1.607-4.614 0-1.86-1.501-2.886-3.001-2.886s-2.999 1.024-2.999 2.886c0 1.784 1.607 2.639 1.607 4.614h2.786zm7.607-6c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25zm-18 0c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25zm12.87 2.385l1.349.612-.413.911-1.298-.588c.15-.3.275-.608.362-.935zm-7.739 0c.087.332.208.631.36.935l-1.296.588-.414-.911 1.35-.612zm9.369-1.885v1h-1.501c.01-.335-.02-.672-.093-1h1.594zm-9.406 0c-.072.327-.102.663-.092.997v.003h-1.502v-1h1.594zm6.928-1.714l1.242-.882.579.816-1.252.888c-.146-.291-.335-.566-.569-.822zm-6.044-.001c-.23.252-.418.525-.569.823l-1.251-.888.578-.816 1.242.881zm4.435-1.046l.663-1.345.897.443-.664 1.345c-.278-.184-.58-.332-.896-.443zm-2.826-.001c-.315.11-.618.258-.897.442l-.663-1.343.897-.443.663 1.344zm-2.587-9.054v2.149c-2.938 1.285-5.141 3.942-5.798 7.158l-2.034-.003c.732-4.328 3.785-7.872 7.832-9.304zm8 0c4.047 1.432 7.1 4.976 7.832 9.304l-2.034.003c-.657-3.216-2.86-5.873-5.798-7.158v-2.149zm-3.5 8.846c-.334-.039-.654-.041-1-.001v-1.529h1v1.53zm2.5-2.53h-6c0-1.105.895-2 2-2h2c.53 0 1.039.211 1.414.586s.586.884.586 1.414zm-3-7c1.242 0 2.25 1.008 2.25 2.25s-1.008 2.25-2.25 2.25-2.25-1.008-2.25-2.25 1.008-2.25 2.25-2.25z" />
               </svg>
             </CardLogo>
             <h1>Critical thinking</h1>
             <p>
               Focusing on the requirements provided from our clients and
-              implement great solutions
+              implement great solutions.
             </p>
           </CardContent>
         </CardContainer>
@@ -97,14 +96,16 @@ const Principles = () => {
                 width="24"
                 height="24"
                 xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
               >
-                <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 2c5.519 0 10 4.481 10 10s-4.481 10-10 10-10-4.481-10-10 4.481-10 10-10zm2 12v-3l5 4-5 4v-3h-9v-2h9zm-4-6v-3l-5 4 5 4v-3h9v-2h-9z" />
+                <path d="M22 10h-1v-2h-11v13h5v1.617c0 .524.121 1.058.502 1.383h-5.002c-.398 0-.779-.158-1.061-.439-.281-.282-.439-.663-.439-1.061v-15c0-.398.158-.779.439-1.061.282-.281.663-.439 1.061-.439h10c.398 0 .779.158 1.061.439.281.282.439.663.439 1.061v2.5zm2 2.25c0-.69-.56-1.25-1.25-1.25h-5.5c-.69 0-1.25.56-1.25 1.25v10.5c0 .69.56 1.25 1.25 1.25h5.5c.69 0 1.25-.56 1.25-1.25v-10.5zm-15.407 11.75h-6.593l2.599-3h3.401v1.804c0 .579.337 1.09.593 1.196zm11.407-1c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm3-3v-6.024h-6v6.024h6zm-2-15h-2v-3h-17v15h6v2h-8v-19h21v5zm-.5 7h-1c-.276 0-.5.224-.5.5s.224.5.5.5h1c.275 0 .5-.224.5-.5s-.225-.5-.5-.5z" />
               </svg>
             </CardLogo>
             <h1>Communication</h1>
             <p>
               We believe in having a great communication with our clients to get
-              the best results
+              the best results.
             </p>
           </CardContent>
         </CardContainer>
@@ -123,7 +124,7 @@ const Principles = () => {
             <h1>Commitment</h1>
             <p>
               Having a trustful compromise to get the work done for our clients
-              in time
+              in time.
             </p>
           </CardContent>
         </CardContainer>

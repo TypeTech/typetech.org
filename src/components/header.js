@@ -24,7 +24,7 @@ const Header = ({ siteTitle, location }) => (
             </div>
             <div className="title">{siteTitle}</div>
           </div>
-          {/* <ul className="nav-links">
+          <ul className="nav-links">
             <Link className="nav-items" to="page-2">
               Home
             </Link>
@@ -35,7 +35,7 @@ const Header = ({ siteTitle, location }) => (
               Blog
             </Link>
             <div></div>
-          </ul> */}
+          </ul>
         </nav>
       </header>
     </WrapperDiv>
