@@ -6,6 +6,7 @@ import Principles from "../components/principles"
 import Services from "../components/services"
 import TechStack from "../components/techstack"
 import About from "../components/about"
+import ContactUs from "../components/contactus"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
     <Services />
     <TechStack />
     <About />
+    <ContactUs/>
   </Layout>
 )
 
