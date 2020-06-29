@@ -118,6 +118,7 @@ footer {
   max-width: 1200vh;
   margin: auto;
   padding: 1vmax;
+  z-index: -1;
 }
 
 .container-body {
