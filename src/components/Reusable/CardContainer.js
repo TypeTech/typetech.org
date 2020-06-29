@@ -1,7 +1,7 @@
 import styled from "@emotion/styled"
 
 const CardContainer = styled.div`
-  display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;

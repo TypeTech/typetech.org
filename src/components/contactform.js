@@ -1,22 +1,32 @@
 import React, { useState } from "react"
 import styled from "@emotion/styled"
 
+const InputEmail = styled.input`
+  display: inline-block;
+  text-align:center;
+  letter-spacing: 0.026em;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-transform: none;
+  background-color: transparent;
+  color: #000000;
+  outline: none;
+  padding: 8px 1.6em;
+  text-decoration: none;
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-image: initial;
+  &:focus{
+    border-color: #4c9ac0;
+  }
+`
+
 const SubmitButton = styled.button``
 
 const ContactForm = () => {
   const [email, setEmail] = useState()
-  const [status, setstatus] = useState(false)
-
-  const Trigger = e => {
-    e.preventDefault()
-    const regex = /^([\w_\.\-\+])+\@([\w\-]+\.)+([\w]{2,10})+$/;
-    if (email.trim() === "" || !regex.test(email)) {
-      setstatus(true)
-      return
-    }
-    setstatus(false)
-  }
-
   return (
     <form
       action="https://gmail.us10.list-manage.com/subscribe/post?u=87f1632117fc73582c5efd107&amp;id=3fb05439f2"
@@ -26,16 +36,14 @@ const ContactForm = () => {
       noValidate
     >
       <div id="mc_embed_signup_scroll">
-        <input
+        <InputEmail
           type="email"
           value={email}
+          name="EMAIL"
           placeholder="youremail@here.com"
           required
-          onChange={()=>setEmail()}
         />
-        <div>
-          <p>{status?<p>Please fill the fields</p>:<span></span>}</p>
-        </div>
+
         <div style={{ position: "absolute", left: -5000 }}>
           <input
             type="text"
@@ -49,6 +57,7 @@ const ContactForm = () => {
             value="Subscribe"
             name="subscribe"
             className="button"
+            onSubmit={() => setEmail()}
           />
         </div>
       </div>

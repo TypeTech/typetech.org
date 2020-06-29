@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import SpanP from "./Reusable/SpanP"
 import CardContainer from "./Reusable/CardContainer"
 import CardContent from "./Reusable/CardContent"
+import GridDiv from "./Reusable/GridDiv"
 
 const Spanx = styled.span`
   color: #ffffff;
@@ -14,15 +15,6 @@ const Container = styled.div`
   background: #333333;
   display: flex;
   justify-content: center;
-`
-
-const ContentDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
 `
 
 const Section = styled.section`
@@ -39,6 +31,7 @@ const InsideContent = styled.div`
 const InsideFooter = styled.div`
   margin-top: 10px;
   padding-top: 20px;
+  width:250px;
 `
 
 const SocialLinks = styled.div`
@@ -66,14 +59,12 @@ const About = () => {
           <SpanP> team</SpanP>
         </h2>
       </Container>
-      <ContentDiv>
+      <GridDiv>
         <CardContainer>
           <CardContent>
             <h1>Isaac Rodríguez</h1>
             <h4>Software engineer</h4>
-            <InsideContent>
-              <SpanP>Field:</SpanP> Web development
-            </InsideContent>
+              <h4><SpanP>Field: </SpanP><span style={{}}>Web development</span></h4>
             <InsideFooter>
               <span>Social contact</span>
               <SocialLinks>
@@ -105,9 +96,9 @@ const About = () => {
           <CardContent>
             <h1>Michael Soro</h1>
             <h4>Software engineer</h4>
-            <InsideContent>
-              <SpanP>Field:</SpanP> Mobile and web development
-            </InsideContent>
+            
+            <h4><SpanP>Field: </SpanP><span style={{}}>Mobile & Web development</span></h4>
+            
             <InsideFooter>
               <span>Social contact</span>
               <SocialLinks>
@@ -139,9 +130,9 @@ const About = () => {
           <CardContent>
             <h1>Jonathan Morera</h1>
             <h4>Software engineer</h4>
-            <InsideContent>
-              <SpanP>Field:</SpanP> Web development
-            </InsideContent>
+            
+            <h4><SpanP>Field: </SpanP><span style={{}}>Web development</span></h4>
+          
             <InsideFooter>
               <span>Social contact</span>
               <SocialLinks>
@@ -169,7 +160,7 @@ const About = () => {
             </InsideFooter>
           </CardContent>
         </CardContainer>
-      </ContentDiv>
+      </GridDiv>
     </Section>
   )
 }
