@@ -89,6 +89,7 @@ const ContactUs = () => {
       <section
         style={{
           paddingTop: 100,
+          paddingBottom:100,
           position:"relative",
         }}
       >

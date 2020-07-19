@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 
 const InputEmail = styled.input`
   display: inline-block;
-  text-align:center;
+  text-align: center;
   letter-spacing: 0.026em;
   cursor: pointer;
   font-size: 0.875rem;
@@ -18,12 +18,27 @@ const InputEmail = styled.input`
   border-style: solid;
   border-color: #000000;
   border-image: initial;
-  &:focus{
+  &:focus {
     border-color: #4c9ac0;
   }
 `
 
-const SubmitButton = styled.button``
+const SubmitButton = styled.input`
+  margin: 20px;
+  padding: 10px;
+  width: 40%;
+  background-color: #4c9ac0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor:pointer;
+  &:hover{
+    transition:1s ease;
+    background-color:#1476a2;
+  }
+`
 
 const ContactForm = () => {
   const [email, setEmail] = useState()
@@ -52,7 +67,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="clear">
-          <input
+          <SubmitButton
             type="submit"
             value="Subscribe"
             name="subscribe"

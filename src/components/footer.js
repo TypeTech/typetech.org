@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Logomain from "./logomain"
+import styled from "@emotion/styled"
+
 
 const Footer = ({ siteTitle }) => {
   return (
@@ -9,15 +11,21 @@ const Footer = ({ siteTitle }) => {
         <div className="container-footer-all">
           <div className="container-body">
             <div className="column1">
-                <Logomain />
-                {siteTitle}
+              <Logomain />
+              {siteTitle}
             </div>
           </div>
         </div>
         <div className="container-footer">
           <div className="footer">
-            <div className="copyright">TypeTech | All rights reserved</div>
-            <div className="information">TypeTech | All rights reserved</div>
+            <div className="copyright">2020 TypeTech | All rights reserved</div>
+            <div className="information">
+              <a href="https://github.com/TypeTech" target="blank">
+                <span style={{
+                  paddingLeft:10
+                }}>GitHub</span>
+              </a>
+            </div>
           </div>
         </div>
       </footer>
