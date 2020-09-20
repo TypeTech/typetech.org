@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Introduction />
     <Principles />
     <Services />
-    <TechStack />
+    {/* <TechStack /> */}
     <About />
     <ContactUs/>
   </Layout>
