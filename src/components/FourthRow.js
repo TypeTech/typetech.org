@@ -37,6 +37,22 @@ const FourthRow = () => {
           description={item.description}
         />
       ))}
+      {FOURTHDROW.map(item => (
+        <Card
+          key={item.title}
+          image={item.image}
+          title={item.title}
+          description={item.description}
+        />
+      ))}
+      {FOURTHDROW.map(item => (
+        <Card
+          key={item.title}
+          image={item.image}
+          title={item.title}
+          description={item.description}
+        />
+      ))}
     </Fragment>
   )
 }
