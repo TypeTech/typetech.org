@@ -15,7 +15,12 @@ const Logomain = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      style={{ width: 42 }}
+    />
+  )
 }
 
 export default Logomain
