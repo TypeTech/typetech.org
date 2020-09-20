@@ -21,7 +21,7 @@ const CardContent = styled.div`
   align-items: center;
   margin: 0.75rem;
   padding: 1.5rem;
-  border-top: 6px solid #1476a2;
+  border-top: 6px solid #039BE5;
   box-shadow: 0px 4px 8px rgba(60, 45, 111, 0.1),
     0px 1px 3px rgba(60, 45, 111, 0.15);
   border-radius: 5px;

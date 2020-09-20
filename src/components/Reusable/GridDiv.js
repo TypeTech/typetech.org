@@ -7,6 +7,7 @@ const GridDiv = styled.div`
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+
 `
 
 export default GridDiv

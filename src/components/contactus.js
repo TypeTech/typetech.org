@@ -6,15 +6,12 @@ import GridDiv from "./Reusable/GridDiv"
 import SectionParagraph from "./Reusable/SectionParagraph"
 
 const CardC = styled.div`
-  flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
+  width:100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 6px solid #1476a2;
+  border-top: 6px solid #039BE5;
   box-shadow: 0px 4px 8px rgba(60, 45, 111, 0.1),
     0px 1px 3px rgba(60, 45, 111, 0.15);
   border-radius: 5px;
@@ -28,9 +25,13 @@ const CardC = styled.div`
     box-shadow: 0px 4px 16px rgba(60, 45, 111, 0.1),
       0px 1px 3px rgba(60, 45, 111, 0.15);
   }
+
+  @media (max-width:700px){
+    flex:1;
+  }
 `
 
-const ButtonApps = styled.div`
+const ButtonApps = styled.button`
   text-align: center;
   display: flex;
   letter-spacing: 0.026em;
@@ -47,13 +48,24 @@ const ButtonApps = styled.div`
   border-style: solid;
   border-color: #000000;
   border-image: initial;
-  margin-top:30px;
+  margin-top:10px;
+  margin-left:10px;
   width:200px;
   &:hover {
     border-color: #4c9ac0;
     svg {
       fill: #4c9ac0;
     }
+  }
+  @media (max-width:700px){
+    margin-left:0px;
+  }
+`
+const ButtonsContainer = styled.div`
+  display:flex;
+  flex-direction:row;
+  @media (max-width:700px){
+    flex-direction:column;
   }
 `
 
@@ -85,7 +97,7 @@ const ContactUs = () => {
             <SectionParagraph>
                 Get the TypeTech app to keep up to date and to use our realtime chat, it's great
             </SectionParagraph>
-            <div>
+            <ButtonsContainer>
             <ButtonApps>
               <svg
                 data-testid="icon-playstore"
@@ -133,7 +145,7 @@ const ContactUs = () => {
                 Download the <SpanP>iOS App</SpanP>
               </p>
             </ButtonApps>
-            </div>
+            </ButtonsContainer>
             <FormContent>
             <SectionParagraph>
                 Or<br/>Contact us via email if you prefer so

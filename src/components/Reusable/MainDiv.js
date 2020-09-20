@@ -5,7 +5,7 @@ const MainDiv = styled.div`
   padding: 3em 6em;
   padding-top: 5em;
   padding-bottom: 5em;
-  background: #2188b6;
+  background: #039BE5;
   display: flex;
 
   @media screen and (max-width: 500px) {
