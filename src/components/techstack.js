@@ -13,7 +13,6 @@ import SecondRow from "./SecondRow"
 import ThirdRow from "./ThirdRow"
 import FourthRow from "./FourthRow"
 import SectionDesc from "../components/Reusable/SectionDesc"
-import SectionParagraph from "./Reusable/SectionParagraph"
 
 const CardDiv = styled.div`
   display: flex;

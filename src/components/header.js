@@ -2,7 +2,6 @@ import PropTypes from "prop-types"
 import React, { Fragment } from "react"
 import Logomain from "./logomain"
 import styled from "@emotion/styled"
-import ReactTooltip from "react-tooltip"
 
 const WrapperDiv = styled.div`
   position: relative;
@@ -74,24 +73,91 @@ const MainLink = styled.a`
 `
 
 const ComboLanguage = styled.select`
-  font-size: 100%;
-    font: inherit;
-    outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    font-size: var(--geist-form-font);
-    height: 4vh;
-    line-height: 1vh;
-    text-rendering: auto;
-    width: 100%;
-    border-radius: 1rem;
-    border: 1px solid #1976d2;
-    background: #333;
-    color: white;
-    padding: 0 var(--geist-gap-half);
-    padding-right: calc(1.5*var(--geist-gap));
-    transition: border-color .15s ease;
+  font-size: 17px;
+  font: inherit;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 4vh;
+  line-height: -4vh;
+  text-rendering: auto;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid #5a5a5a;
+  background: #333;
+  color: white;
+  padding-left: 40px;
+  padding-right: 10px;
+  transition: border-color 0.15s ease;
+  cursor:pointer;
+
+  &:focus {
+    border: 2px solid #039be5;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+`
+
+const NavList = styled.nav`
+  height: 40px;
+  margin-left: 10px;
+  position: relative;
+  overflow-x: auto;
+`
+
+const NavInnerList = styled.ul`
+  color: var(--xstyled-colors-text, #222);
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  height: 34px;
+`
+
+const NavItems = styled.li`
+  list-style-type: none;
+  flex: 1 1 auto;
+  margin: 0px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 1.2;
+`
+
+const NavLinks = styled.a`
+  appearance: none;
+  color: #fff;
+  display: flex;
+  padding: 0px 10px;
+  background-color: transparent;
+  border: 0px;
+  transition: color 300ms ease 0s;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: #039be5;
+    text-decoration: none;
+  }
+`
+
+const SmallContainer = styled.div`
+  overflow: auto;
+`
+
+const SvG = styled.svg`
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  fill: white;
 `
 
 const Header = ({ siteTitle }) => (
@@ -116,33 +182,40 @@ const Header = ({ siteTitle }) => (
                 <Title>{siteTitle}</Title>
               </MainLink>
             </LogoContainer>
-            <div style={{
-              marginLeft: 'auto'
-            }}>
-              <div>
+            <div
+              style={{
+                marginLeft: "auto",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  position: "relative",
+                }}
+              >
+                <SvG
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 21h-1.713l-.658-1.846h-3l-.663 1.846h-1.659l3.04-8h1.603l3.05 8zm-2.814-3.12l-1.049-3.018-1.054 3.018h2.103zm2.814-5.88c.552 0 1 .449 1 1v8c0 .551-.448 1-1 1h-8c-.552 0-1-.449-1-1v-8c0-.551.448-1 1-1h8zm0-2h-8c-1.656 0-3 1.343-3 3v8c0 1.657 1.344 3 3 3h8c1.657 0 3-1.343 3-3v-8c0-1.657-1.343-3-3-3zm-15.855-2.114c.039.58.103 1.115.195 1.593-1.225.224-1.275-.984-.195-1.593zm8.855-4.886v5h-1c-.742 0-1.441.173-2.076.465-.195-.806-.783-1.53-1.68-1.964.078-.298.123-.522.167-.744l-1.35-.261c-.022.112-.063.327-.135.613-.455-.067-.94-.075-1.431-.026.011-.329.032-.653.06-.963h1.508v-1.278h-1.327c.065-.326.121-.521.176-.705l-1.316-.396c-.098.323-.178.64-.26 1.101h-1.504v1.278h1.341c-.036.414-.058.842-.064 1.275-1.48.544-2.109 1.581-2.109 2.521 0 1.11.876 2.086 2.261 1.96 1.72-.156 2.868-1.456 3.542-3.053.885.536.838 1.161.772 1.552-.965.913-1.575 2.196-1.575 3.625v1h-5c-1.656 0-3-1.343-3-3v-8c0-1.657 1.344-3 3-3h8c1.657 0 3 1.343 3 3zm-7.5 4.467c.328-.042.658-.05.97-.026-.214.476-.497.948-.857 1.319-.054-.396-.092-.83-.113-1.293z" />
+                </SvG>
                 <ComboLanguage>
-<option>HI</option>
+                  <option>English</option>
+                  <option>Spanish</option>
                 </ComboLanguage>
               </div>
-            {/* <a href="#!" data-tip data-for="translation">
-              <SVG
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-                >
-                <path d="M24 24h-2.784l-1.07-3h-4.875l-1.077 3h-2.697l4.941-13h2.604l4.958 13zm-4.573-5.069l-1.705-4.903-1.712 4.903h3.417zm-9.252-12.804c.126-.486.201-.852.271-1.212l-2.199-.428c-.036.185-.102.533-.22 1-.742-.109-1.532-.122-2.332-.041.019-.537.052-1.063.098-1.569h2.456v-2.083h-2.161c.106-.531.198-.849.288-1.149l-2.147-.645c-.158.526-.29 1.042-.422 1.794h-2.451v2.083h2.184c-.058.673-.093 1.371-.103 2.077-2.413.886-3.437 2.575-3.437 4.107 0 1.809 1.427 3.399 3.684 3.194 2.802-.255 4.673-2.371 5.77-4.974 1.134.654 1.608 1.753 1.181 2.771-.396.941-1.561 1.838-3.785 1.792v2.242c2.469.038 4.898-.899 5.85-3.166.93-2.214-.132-4.635-2.525-5.793zm-2.892 1.531c-.349.774-.809 1.544-1.395 2.15-.09-.646-.151-1.353-.184-2.108.533-.07 1.072-.083 1.579-.042zm-3.788.724c.062.947.169 1.818.317 2.596-1.996.365-2.076-1.603-.317-2.596zm11.236-1.745l-2.075-5.533 5.414-1.104-.976 1.868c2.999 2.418 4.116 5.645 4.532 8.132-1.736-2.913-3.826-4.478-5.885-5.321l-1.01 1.958zm-7.895 10.781l1.985 5.566-5.43 1.016 1.006-1.852c-2.96-2.465-4.021-5.654-4.397-8.148 1.689 2.94 3.749 4.483 5.794 5.36l1.042-1.942zm10.795-6.029" />
-              </SVG>
-            </a>
-            <ReactTooltip
-              id="translation"
-              place="bottom"
-              type="dark"
-              effect="float"
-              >
-              <span>i18n translations coming soon :(</span>
-            </ReactTooltip> */}
-              </div>
+            </div>
+            <SmallContainer>
+              <NavList>
+                <NavInnerList>
+                  <NavItems>
+                    <NavLinks href="/pricing">Pricing</NavLinks>
+                  </NavItems>
+                </NavInnerList>
+              </NavList>
+            </SmallContainer>
           </InsideInsideDiv>
         </InsideDiv>
       </Head>

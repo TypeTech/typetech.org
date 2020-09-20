@@ -19,18 +19,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 1vh;
-  height: 10vh;
-  background-color: #333333;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
 
 h2{
   font-size: 30px;
