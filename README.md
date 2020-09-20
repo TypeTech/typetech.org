@@ -9,7 +9,7 @@ We are TypeTech, a group of software developers dedicated to Open Sourcing and f
 
 ## Get in contact with us
 
-- [Our Email](typetechorg@gmail.com)
+- <a href="mailto:typetechorg@gmail.com">Our Email</a>
 
 - [Subscribe to our newsletter](https://gmail.us10.list-manage.com/subscribe/post?u=87f1632117fc73582c5efd107&id=3fb05439f2)
 

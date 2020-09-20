@@ -1,7 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Logomain from "./logomain"
-import styled from "@emotion/styled"
 
 
 const Footer = ({ siteTitle }) => {

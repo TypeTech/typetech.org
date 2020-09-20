@@ -3,17 +3,7 @@ import SpanP from "./Reusable/SpanP"
 import styled from "@emotion/styled"
 import ContactForm from "./contactform"
 import GridDiv from "./Reusable/GridDiv"
-import CardContent from "./Reusable/CardContent"
-import CardContainer from "./Reusable/CardContainer"
 import SectionParagraph from "./Reusable/SectionParagraph"
-
-const CardCont = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-`
 
 const CardC = styled.div`
   flex: 1;
@@ -37,18 +27,6 @@ const CardC = styled.div`
     transform: translateY(-1px);
     box-shadow: 0px 4px 16px rgba(60, 45, 111, 0.1),
       0px 1px 3px rgba(60, 45, 111, 0.15);
-  }
-`
-
-const MainDiv = styled.div`
-  padding-top: 30px;
-  width: 100%;
-  font-size: 1.1rem;
-  display: flex;
-  justify-content: space-around;
-
-  @media screen and (max-width: 720px) {
-    width: 100%;
   }
 `
 
