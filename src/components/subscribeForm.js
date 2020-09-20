@@ -33,7 +33,7 @@ const SubmitButton = styled.button`
   font-size: 1.5rem;
   font-weight: 600;
   color: #ffffff;
-  transition:background-color 1s ease;
+  transition: background-color 1s ease;
   &:hover {
     cursor: pointer;
     background-color: #1476a2;
@@ -57,6 +57,13 @@ const SubscribeForm = ({ status, message, onValidated }) => {
         display: "inline-block",
       }}
     >
+      <InputEmail
+        ref={node => (email = node)}
+        type="email"
+        placeholder="Your email"
+      />
+      <br />
+      <br />
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
       {status === "error" && (
         <div
@@ -70,13 +77,6 @@ const SubscribeForm = ({ status, message, onValidated }) => {
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
-      <br />
-      <InputEmail
-        ref={node => (email = node)}
-        type="email"
-        placeholder="Your email"
-      />
-      <br />
       <SubmitButton
         onClick={submit}
         disabled={status === "sending" ? true : false}
