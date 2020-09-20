@@ -35,6 +35,11 @@ const StackBrandsContent = styled.div`
     left: 0;
     top: 0;
   }
+
+  @media (max-width: 700px) {
+    height: 650px;
+
+  }
 `
 
 export default StackBrandsContent

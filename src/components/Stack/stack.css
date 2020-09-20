@@ -3,8 +3,6 @@
 }
 
 
-
-
 .stacklogo {
 	background-color: #fff;
 	border-radius: 10px;
@@ -96,7 +94,6 @@
 	letter-spacing: 1px;
 }
 
-/* SOCIAL PANEL CSS */
 .social-panel-container {
 	position: fixed;
 	right: 0;
@@ -240,6 +237,10 @@
 	text-align: center;
 	z-index: 998;
 }
+.courses-separate{
+	display: none;
+}
+
 
 .floating-text a {
 	color: #FF7500;
@@ -254,5 +255,26 @@
 	
 	.floating-btn {
 		right: 10px;
+	}
+}
+
+@media (max-width:700px){
+	.stacklogo{
+		width: 250px;
+	}
+	.courses-container{
+		display: none;
+	}
+	.courses-separate{
+		display: block;
+	}
+	.logo{
+		width: 60px;
+		padding: 0;
+		margin: 0;
+	}
+	.course-preview{
+		margin: 0;
+		padding: 0;
 	}
 }
