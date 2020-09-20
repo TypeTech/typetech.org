@@ -76,7 +76,7 @@ const FormContent = styled.div`
 const ContactUs = () => {
   return (
     <Fragment>
-      <section
+      <section id="contact_section"
         style={{
           paddingTop: 100,
           paddingBottom:100,
