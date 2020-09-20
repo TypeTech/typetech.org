@@ -35,7 +35,7 @@ const Header = ({ siteTitle }) => (
             </div>
             <div className="title">{siteTitle}</div>
           </div>
-          <a data-tip data-for="translation">
+          <a href="#!" data-tip data-for="translation">
             <SVG
               xmlns="http://www.w3.org/2000/svg"
               width="40"
