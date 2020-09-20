@@ -25,7 +25,7 @@ const DescriptionDiv = styled.div`
 
   @media screen and (max-width: 500px) {
     margin-top: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: center;
     margin-bottom: 10px;
   }
