@@ -1,14 +1,15 @@
 import styled from "@emotion/styled"
 
-const SectionParagraph = styled.h5`
+const SectionParagraph = styled.h3`
   font-size: 20px;
-  color: #666666;
+  color: #292929;
   margin: 24px 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
 
   @media (max-width: 700px) {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    margin:20px;
   }
 `
 

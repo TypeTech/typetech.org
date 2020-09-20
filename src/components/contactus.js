@@ -148,7 +148,7 @@ const ContactUs = () => {
             </ButtonsContainer>
             <FormContent>
             <SectionParagraph>
-                Or<br/>Contact us via email if you prefer so
+                Subscribe to our newsletter
             </SectionParagraph>
               <ContactForm />
             </FormContent>

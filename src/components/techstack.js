@@ -19,6 +19,19 @@ const CardDiv = styled.div`
   display: flex;
 `
 
+const StackP = styled.h3`
+  font-size: 20px;
+  color: #292929;
+  margin: 24px 0px;
+  margin-bottom: 30px;
+  text-align: justify;
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+    margin:20px;
+  }
+`
+
 const TechStack = () => {
   return (
     <section
@@ -32,11 +45,11 @@ const TechStack = () => {
         </h2>
       </ContainerDiv>
       <SectionDesc>
-        <SectionParagraph>
+        <StackP>
           Technologies we are proficient with, the use for each project might
           vary upon the clients requirements.
           <br />
-        </SectionParagraph>
+        </StackP>
       </SectionDesc>
       <StackContainer>
         <StackBrandsContainer>
@@ -65,11 +78,11 @@ const TechStack = () => {
         </StackBrandsContainer>
       </StackContainer>
       <SectionDesc>
-        <SectionParagraph>
+        <StackP>
           Other technologies such as cloud providers and server deployment
           services can be analyzed depending on the use of the application being
           built.
-        </SectionParagraph>
+        </StackP>
       </SectionDesc>
     </section>
   )

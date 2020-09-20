@@ -14,7 +14,7 @@ const Container = styled.div`
   width: 100%;
   padding-top: 5em;
   padding-bottom: 3em;
-  background: #333333;
+  background: #292929;
   display: flex;
   justify-content: center;
 `
@@ -26,7 +26,7 @@ const SectionParagraph = styled.h5`
 `
 
 const Section = styled.section`
-  background-color: #333333;
+  background-color: #292929;
   color: #ffffff;
   padding-bottom: 100px;
 `

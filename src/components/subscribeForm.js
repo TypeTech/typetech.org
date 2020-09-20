@@ -57,14 +57,16 @@ const SubscribeForm = ({ status, message, onValidated }) => {
         display: "inline-block",
       }}
     >
+      <label htmlFor="email">Subscribe via e-mail:</label>
+      <br></br>
       <InputEmail
         ref={node => (email = node)}
         type="email"
-        placeholder="Your email"
+        name="email"
+        placeholder="Your email here"
       />
       <br />
       <br />
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
       {status === "error" && (
         <div
           style={{ color: "red" }}
