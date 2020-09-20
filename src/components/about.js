@@ -56,14 +56,18 @@ const About = () => {
       </Container>
       <GridDiv>
         {TEAM.map(item => (
-          <CardContainer>
+          <CardContainer key={item.name}>
             <CardContent>
               <h1>{item.name}</h1>
               <h4>{item.title}</h4>
               <h4>
-                <span style={{
-                  color:'#1fb5ff',
-                }}>Field: </span>
+                <span
+                  style={{
+                    color: "#1fb5ff",
+                  }}
+                >
+                  Field:{" "}
+                </span>
                 <span>{item.role}</span>
               </h4>
               <InsideFooter>
