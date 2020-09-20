@@ -61,8 +61,10 @@ const About = () => {
               <h1>{item.name}</h1>
               <h4>{item.title}</h4>
               <h4>
-                <SpanP>Field: </SpanP>
-                <span style={{}}>{item.role}</span>
+                <span style={{
+                  color:'#1fb5ff',
+                }}>Field: </span>
+                <span>{item.role}</span>
               </h4>
               <InsideFooter>
                 <span>Social contact</span>
