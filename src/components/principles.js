@@ -23,7 +23,11 @@ const Principles = () => {
               className={mode ? "Main-Card-Content-Dark" : "Main-Card-Content"}
             >
               <CardLogo>
-                <img src={item.icon} alt={item.title} />
+                {mode ? (
+                  <img src={item.iconDark} alt={item.title} />
+                ) : (
+                  <img src={item.icon} alt={item.title} />
+                )}
               </CardLogo>
               <h1>{item.title}</h1>
               <p>{item.description}</p>
