@@ -19,12 +19,14 @@ const Layout = ({ children }) => {
   `)
 
   const { mode } = useContext(ModeContext)
-  if (mode) {
-    document.querySelector("body").style.backgroundColor = "#111"
-    document.querySelector("body").style.color = "#fff"
-  } else {
-    document.querySelector("body").style.backgroundColor = "#fff"
-    document.querySelector("body").style.color = "#000"
+  if (typeof document !== "undefined") {
+    if (mode) {
+      document.querySelector("body").style.backgroundColor = "#111"
+      document.querySelector("body").style.color = "#fff"
+    } else {
+      document.querySelector("body").style.backgroundColor = "#fff"
+      document.querySelector("body").style.color = "#000"
+    }
   }
   return (
     <>
