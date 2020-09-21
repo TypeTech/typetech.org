@@ -11,24 +11,24 @@ import { ModeContext } from "../context/ModeContext"
 const Principles = () => {
   const { mode } = useContext(ModeContext)
   return (
-    <section
-      className={mode?"Section-Dark":"Section"}
-    >
+    <section className={mode ? "Section-Dark" : "Section"}>
       <div className={mode ? "Container-Div-Dark" : "Container-Div"}>
-        <h2 className={mode?"Heading-Dark":"Heading"}>
+        <h2 className={mode ? "Heading-Dark" : "Heading"}>
           Our <SpanP>principles</SpanP>
         </h2>
       </div>
       <GridDiv>
         {PRINCIPLES.map(item => (
           <CardContainer key={item.title}>
-            <CardContent>
+            <div
+              className={mode ? "Main-Card-Content-Dark" : "Main-Card-Content"}
+            >
               <CardLogo>
                 <img src={item.icon} alt={item.title} />
               </CardLogo>
               <h1>{item.title}</h1>
               <p>{item.description}</p>
-            </CardContent>
+            </div>
           </CardContainer>
         ))}
       </GridDiv>

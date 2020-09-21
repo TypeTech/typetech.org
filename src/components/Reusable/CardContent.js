@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 
 const CardContent = styled.div`
+  background-color:#fff;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
