@@ -12,31 +12,18 @@ const ModeProvider = props => {
   }, [mode])
 
   function initialState() {
-    const userPreference = getColorScheme()
-    let inStorage;
-    let savedMode;
-    if (typeof window!=="undefined") { 
+    let inStorage
+    let savedMode
+    if (typeof window !== "undefined") {
       inStorage = "mode" in localStorage
       savedMode = JSON.parse(localStorage.getItem("mode"))
     }
-    if (inStorage) {
-      return savedMode
-    } else if (userPreference) {
-      return true
-    } else {
-      return false
-    }
+    return inStorage ? savedMode : false
   }
   useEffect(() => {
     initialState()
   }, [])
 
-  function getColorScheme() {
-    if (typeof window !== "undefined") {
-      if (!window.matchMedia) return
-      return window.matchMedia("(prefers-color-scheme:dark)").matches
-    }
-  }
   return (
     <ModeContext.Provider
       value={{
