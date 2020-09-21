@@ -1,9 +1,9 @@
-import Security from "../images/security.svg"
-import Performance from "../images/performance.svg"
-import Communication from "../images/communication.svg"
-import Commit from "../images/commit.svg"
-import Testing from "../images/testing.svg"
-import Thinking from "../images/thinking.svg"
+import Security from "../images/principles/security.svg"
+import Performance from "../images/principles/performance.svg"
+import Communication from "../images/principles/communication.svg"
+import Commit from "../images/principles/commit.svg"
+import Testing from "../images/principles/testing.svg"
+import Thinking from "../images/principles/thinking.svg"
 
 export const PRINCIPLES = [
     {
