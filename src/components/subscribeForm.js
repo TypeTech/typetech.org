@@ -1,27 +1,7 @@
-import React from "react"
+import React, { useContext } from "react"
 import styled from "@emotion/styled"
-
-const InputEmail = styled.input`
-  display: inline-block;
-  text-align: center;
-  letter-spacing: 0.026em;
-  cursor: pointer;
-  font-size: 1rem;
-  text-transform: none;
-  background-color: transparent;
-  color: #000000;
-  outline: none;
-  padding: 10px 2em;
-  text-decoration: none;
-  border-radius: 3px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
-  border-image: initial;
-  &:focus {
-    border-color: #4c9ac0;
-  }
-`
+import "../styles/contact.css"
+import { ModeContext } from "../context/ModeContext"
 
 const SubmitButton = styled.button`
   margin: 20px;
@@ -41,6 +21,7 @@ const SubmitButton = styled.button`
 `
 
 const SubscribeForm = ({ status, message, onValidated }) => {
+  const {mode}=useContext(ModeContext)
   let email
   const submit = () =>
     email &&
@@ -57,13 +38,14 @@ const SubscribeForm = ({ status, message, onValidated }) => {
         display: "inline-block",
       }}
     >
-      <label htmlFor="email">Subscribe via e-mail:</label>
+      <label htmlFor="email" className={mode?"Label-Dark":"Label"}>Subscribe via e-mail:</label>
       <br></br>
-      <InputEmail
+      <input
         ref={node => (email = node)}
         type="email"
         name="email"
         placeholder="Your email here"
+        className={mode?"Input-Dark":"Input"}
       />
       <br />
       <br />
@@ -83,7 +65,7 @@ const SubscribeForm = ({ status, message, onValidated }) => {
         onClick={submit}
         disabled={status === "sending" ? true : false}
       >
-        {status === "sending" ? "Sending ..." : "Submit"}
+        {status === "sending" ? "Sending ..." : "Subscribe"}
       </SubmitButton>
     </div>
   )
