@@ -10,38 +10,40 @@ import TechStack from "../components/techstack"
 import LazyLoad from "react-lazyload"
 import ModeProvider from "../context/ModeContext"
 
-const IndexPage = () => (
-  <ModeProvider>
-    <Layout>
-      <SEO title="Home" />
-      <Introduction />
-      <Principles />
-      <Services />
-      <LazyLoad
-        placeholder={
-          <section
-            style={{
-              paddingBottom: 100,
-            }}
-          ></section>
-        }
-      >
-        <TechStack />
-      </LazyLoad>
-      <About />
-      <LazyLoad
-        placeholder={
-          <section
-            style={{
-              paddingBottom: 100,
-            }}
-          ></section>
-        }
-      >
-        <ContactUs />
-      </LazyLoad>
-    </Layout>
-  </ModeProvider>
-)
+const IndexPage = () => {
+  return (
+    <ModeProvider>
+      <Layout>
+        <SEO title="Home" />
+        <Introduction />
+        <Principles />
+        <Services />
+        <LazyLoad
+          placeholder={
+            <section
+              style={{
+                paddingBottom: 100,
+              }}
+            ></section>
+          }
+        >
+          <TechStack />
+        </LazyLoad>
+        <About />
+        <LazyLoad
+          placeholder={
+            <section
+              style={{
+                paddingBottom: 100,
+              }}
+            ></section>
+          }
+        >
+          <ContactUs />
+        </LazyLoad>
+      </Layout>
+    </ModeProvider>
+  )
+}
 
 export default IndexPage
