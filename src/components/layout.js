@@ -1,9 +1,10 @@
-import React from "react"
+import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./Reusable/layout.css"
 import Footer from "./footer"
+import { ModeContext } from "../context/ModeContext"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -17,13 +18,24 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const { mode } = useContext(ModeContext)
+  if (mode) {
+    document.querySelector("body").style.backgroundColor = "#111"
+    document.querySelector("body").style.color = "#fff"
+  } else {
+    document.querySelector("body").style.backgroundColor = "#fff"
+    document.querySelector("body").style.color = "#000"
+  }
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} location={data.site.siteMetadata.location} />
+      <Header
+        siteTitle={data.site.siteMetadata.title}
+        location={data.site.siteMetadata.location}
+      />
       <div
         style={{
           margin: `0`,
-          maxWidth: 8000,         
+          maxWidth: 8000,
         }}
       >
         <main>{children}</main>

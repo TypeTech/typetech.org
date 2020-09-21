@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useContext } from "react"
 import styled from "@emotion/styled"
 import SpanP from "./Reusable/SpanP"
 import CardContainer from "./Reusable/CardContainer"
 import CardContent from "./Reusable/CardContent"
 import GridDiv from "./Reusable/GridDiv"
 import { TEAM } from "../data/team"
+import "../styles/main.css"
+import { ModeContext } from "../context/ModeContext"
 
 const Spanx = styled.span`
   color: #ffffff;
@@ -45,6 +47,7 @@ const SVGs = styled.svg`
 `
 
 const About = () => {
+  const { mode } = useContext(ModeContext)
   return (
     <Section>
       <Container>
@@ -57,7 +60,9 @@ const About = () => {
       <GridDiv>
         {TEAM.map(item => (
           <CardContainer key={item.name}>
-            <CardContent>
+            <div
+              className="Main-Card-Content-Dark"
+            >
               <h1>{item.name}</h1>
               <h4>{item.title}</h4>
               <h4>
@@ -95,7 +100,7 @@ const About = () => {
                   </a>
                 </SocialLinks>
               </InsideFooter>
-            </CardContent>
+            </div>
           </CardContainer>
         ))}
       </GridDiv>

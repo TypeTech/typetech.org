@@ -17,11 +17,29 @@ const IndexPage = () => (
       <Introduction />
       <Principles />
       <Services />
-      <LazyLoad placeholder={<section></section>}>
+      <LazyLoad
+        placeholder={
+          <section
+            style={{
+              paddingBottom: 100,
+            }}
+          ></section>
+        }
+      >
         <TechStack />
       </LazyLoad>
       <About />
-      <ContactUs />
+      <LazyLoad
+        placeholder={
+          <section
+            style={{
+              paddingBottom: 100,
+            }}
+          ></section>
+        }
+      >
+        <ContactUs />
+      </LazyLoad>
     </Layout>
   </ModeProvider>
 )
