@@ -1,7 +1,7 @@
-import Custom from "../images/custom.svg"
-import Styling from "../images/styling.svg"
-import Dynamic from "../images/dynamic.svg"
-import Static from "../images/static.svg"
+import Custom from "../images/services/custom.svg"
+import Styling from "../images/services/styling.svg"
+import Dynamic from "../images/services/dynamic.svg"
+import Static from "../images/services/static.svg"
 
 export const SERVICES = [
   {
