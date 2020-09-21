@@ -91,8 +91,8 @@ const ComboLanguage = styled.select`
   color: white;
   padding-left: 40px;
   padding-right: 20px;
-  padding-bottom:10px;
-  padding-top:10px;
+  padding-bottom:8px;
+  padding-top:8px;
   transition: border-color 0.15s ease;
   cursor: pointer;
 

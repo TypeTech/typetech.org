@@ -15,10 +15,10 @@ const ModeProvider = props => {
     let inStorage = false
     let savedMode = false
     const userPreference = getColorScheme();
-    if (typeof window !== "undefined") {
+    if (typeof localStorage !== "undefined") {
       inStorage = "mode" in localStorage
     }
-    if (typeof window !== "undefined") {
+    if (typeof localStorage !== "undefined") {
       savedMode = JSON.parse(localStorage.getItem("mode"))
     }
     if (inStorage) {
