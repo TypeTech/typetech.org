@@ -11,7 +11,7 @@ const Card = ({ image, title, description }) => {
           <div className={mode ? "course-preview-dark" : "course-preview"}>
             <img
               src={image}
-              alt="react-logo"
+              alt={title}
               className={mode ? "logo-dark" : "logo"}
             />
           </div>
@@ -22,14 +22,12 @@ const Card = ({ image, title, description }) => {
         </div>
       </div>
       <div className="courses-separate">
-      <div className={mode ? "course-preview-dark" : "course-preview"}>
+        <div className={mode ? "course-preview-dark" : "course-preview-dark"}>
           <img
             src={image}
-            alt="react-logo"
+            alt={title}
             className={mode ? "logo-dark" : "logo"}
           />
-          <h2>{title}</h2>
-          <p>{description}</p>
         </div>
       </div>
     </div>

@@ -38,14 +38,12 @@
 }
 
 .course-preview {
-	background-color: #ffffff;
 	color: #fff;
-	padding: 30px;
+	padding: 60px;
 	max-width: 250px;
 }
 
 .course-preview-dark{
-	background-color: #292929;
 	color: #fff;
 	padding: 30px;
 	max-width: 250px;
@@ -300,5 +298,9 @@
 	.course-preview{
 		margin: 0;
 		padding: 0;
+	}
+
+	.course-info{
+		display: none;
 	}
 }
