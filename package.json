@@ -25,7 +25,8 @@
     "react-helmet": "^6.0.0",
     "react-lazyload": "^3.0.0",
     "react-mailchimp-subscribe": "^2.1.0",
-    "react-tooltip": "^4.2.7"
+    "react-tooltip": "^4.2.7",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"
