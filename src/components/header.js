@@ -1,7 +1,8 @@
 import PropTypes from "prop-types"
-import React, { useState, Fragment } from "react"
+import React, { useContext, Fragment } from "react"
 import Logomain from "./logomain"
 import styled from "@emotion/styled"
+import { ModeContext } from "../context/ModeContext"
 
 const WrapperDiv = styled.div`
   position: relative;
@@ -178,8 +179,9 @@ const ButtonSwitch = styled.button`
 `
 
 const Header = ({ siteTitle }) => {
-  const [mode, setMode] = useState(false)
-
+  
+  const { mode, setMode } = useContext(ModeContext);
+  
   return (
     <Fragment>
       <WrapperDiv>

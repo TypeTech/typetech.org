@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import SpanP from "./Reusable/SpanP"
 import ContainerDiv from "./Reusable/ContainerDiv"
 import GridDiv from "./Reusable/GridDiv"
@@ -6,19 +6,20 @@ import CardContainer from "./Reusable/CardContainer"
 import CardContent from "./Reusable/CardContent"
 import CardLogo from "./Reusable/CardLogo"
 import { PRINCIPLES } from "../data/principles"
+import "../styles/main.css"
+import { ModeContext } from "../context/ModeContext"
 
 const Principles = () => {
+  const { mode } = useContext(ModeContext)
   return (
     <section
-      style={{
-        paddingBottom: 100,
-      }}
+      className={mode?"Section-Dark":"Section"}
     >
-      <ContainerDiv>
-        <h2>
+      <div className={mode ? "Container-Div-Dark" : "Container-Div"}>
+        <h2 className={mode?"Heading-Dark":"Heading"}>
           Our <SpanP>principles</SpanP>
         </h2>
-      </ContainerDiv>
+      </div>
       <GridDiv>
         {PRINCIPLES.map(item => (
           <CardContainer key={item.title}>

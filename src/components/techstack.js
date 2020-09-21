@@ -1,10 +1,9 @@
-import React from "react"
+import React, { useContext } from "react"
 import ContainerDiv from "./Reusable/ContainerDiv"
 import SpanP from "./Reusable/SpanP"
 import StackContainer from "./Reusable/StackContainer"
 import StackBrandsContainer from "./Reusable/StackBrandsContainer"
 import StackBrandsContent from "./Reusable/StackBrandsContent"
-import "./Reusable/layout.css"
 import styled from "@emotion/styled"
 import TopMovement from "./Stack/TopMovement"
 import BottomMovement from "./Stack/BottomMovement"
@@ -13,6 +12,8 @@ import SecondRow from "./SecondRow"
 import ThirdRow from "./ThirdRow"
 import FourthRow from "./FourthRow"
 import SectionDesc from "../components/Reusable/SectionDesc"
+import "../styles/main.css"
+import { ModeContext } from "../context/ModeContext"
 
 const CardDiv = styled.div`
   display: flex;
@@ -27,28 +28,25 @@ const StackP = styled.h3`
 
   @media (max-width: 700px) {
     font-size: 1rem;
-    margin:20px;
+    margin: 20px;
   }
 `
 
 const TechStack = () => {
+  const { mode } = useContext(ModeContext)
   return (
-    <section
-      style={{
-        paddingBottom: 100,
-      }}
-    >
-      <ContainerDiv>
+    <section className={mode ? "Section-Dark" : "Section"}>
+      <div className={mode ? "Container-Div-Dark" : "Container-Div"}>
         <h2>
           Our <SpanP>Tech</SpanP> Stack
         </h2>
-      </ContainerDiv>
+      </div>
       <SectionDesc>
-        <StackP>
+        <h3 className={mode ? "Paragraph-Dark" : "Paragraph"}>
           Technologies we are proficient with, the use for each project might
           vary upon the clients requirements.
           <br />
-        </StackP>
+        </h3>
       </SectionDesc>
       <StackContainer>
         <StackBrandsContainer>
@@ -77,11 +75,11 @@ const TechStack = () => {
         </StackBrandsContainer>
       </StackContainer>
       <SectionDesc>
-        <StackP>
+        <h3 className={mode ? "Paragraph-Dark" : "Paragraph"}>
           Other technologies such as cloud providers and server deployment
           services can be analyzed depending on the use of the application being
           built.
-        </StackP>
+        </h3>
       </SectionDesc>
     </section>
   )
