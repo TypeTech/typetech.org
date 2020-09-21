@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 import { ModeContext } from "../context/ModeContext"
 
 const WrapperDiv = styled.div`
-  position: relative;
+  position: sticky;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -82,7 +82,6 @@ const ComboLanguage = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  height: 4vh;
   line-height: -4vh;
   text-rendering: auto;
   width: 100%;
@@ -91,7 +90,9 @@ const ComboLanguage = styled.select`
   background: #333;
   color: white;
   padding-left: 40px;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-bottom:10px;
+  padding-top:10px;
   transition: border-color 0.15s ease;
   cursor: pointer;
 
