@@ -1,5 +1,4 @@
 import React, { useContext } from "react"
-import ContainerDiv from "./Reusable/ContainerDiv"
 import SpanP from "./Reusable/SpanP"
 import StackContainer from "./Reusable/StackContainer"
 import StackBrandsContainer from "./Reusable/StackBrandsContainer"
@@ -17,19 +16,6 @@ import { ModeContext } from "../context/ModeContext"
 
 const CardDiv = styled.div`
   display: flex;
-`
-
-const StackP = styled.h3`
-  font-size: 20px;
-  color: #292929;
-  margin: 24px 0px;
-  margin-bottom: 30px;
-  text-align: justify;
-
-  @media (max-width: 700px) {
-    font-size: 1rem;
-    margin: 20px;
-  }
 `
 
 const TechStack = () => {

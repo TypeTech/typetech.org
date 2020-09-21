@@ -21,7 +21,7 @@ const SubmitButton = styled.button`
 `
 
 const SubscribeForm = ({ status, message, onValidated }) => {
-  const {mode}=useContext(ModeContext)
+  const { mode } = useContext(ModeContext)
   let email
   const submit = () =>
     email &&
@@ -38,14 +38,16 @@ const SubscribeForm = ({ status, message, onValidated }) => {
         display: "inline-block",
       }}
     >
-      <label htmlFor="email" className={mode?"Label-Dark":"Label"}>Subscribe via e-mail:</label>
+      <label htmlFor="email" className={mode ? "Label-Dark" : "Label"}>
+        Subscribe via e-mail:
+      </label>
       <br></br>
       <input
         ref={node => (email = node)}
         type="email"
         name="email"
         placeholder="Your email here"
-        className={mode?"Input-Dark":"Input"}
+        className={mode ? "Input-Dark" : "Input"}
       />
       <br />
       <br />
