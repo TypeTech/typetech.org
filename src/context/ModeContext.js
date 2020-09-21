@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 export const ModeContext = React.createContext()
 
 const ModeProvider = props => {
-  const [mode, setMode] = useState(initialState)
+  const [mode, setMode] = useState(initialState())
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -12,23 +12,24 @@ const ModeProvider = props => {
   }, [mode])
 
   function initialState() {
-    let inStorage = false
-    let savedMode = false
-    const userPreference = getColorScheme();
-    if (typeof localStorage !== "undefined") {
+    const userPreference = getColorScheme()
+    let inStorage;
+    let savedMode;
+    if (typeof window!=="undefined") { 
       inStorage = "mode" in localStorage
-    }
-    if (typeof localStorage !== "undefined") {
       savedMode = JSON.parse(localStorage.getItem("mode"))
     }
     if (inStorage) {
       return savedMode
     } else if (userPreference) {
-      return true;
+      return true
     } else {
-      return false;
+      return false
     }
   }
+  useEffect(() => {
+    initialState()
+  }, [])
 
   function getColorScheme() {
     if (typeof window !== "undefined") {
