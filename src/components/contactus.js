@@ -1,66 +1,12 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useContext } from "react"
 import SpanP from "./Reusable/SpanP"
 import styled from "@emotion/styled"
 import ContactForm from "./contactform"
 import GridDiv from "./Reusable/GridDiv"
-import SectionParagraph from "./Reusable/SectionParagraph"
+import "../styles/contact.css"
+import { ModeContext } from "../context/ModeContext";
 
-const CardC = styled.div`
-  display: flex;
-  width:100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-top: 6px solid #039BE5;
-  box-shadow: 0px 4px 8px rgba(60, 45, 111, 0.1),
-    0px 1px 3px rgba(60, 45, 111, 0.15);
-  border-radius: 5px;
-  text-align: center;
-  -webkit-transition: all linear 0.1s;
-  transition: all linear 0.1s;
-  &:hover {
-    -webkit-transform: translateY(-1px);
-    -ms-transform: translateY(-1px);
-    transform: translateY(-1px);
-    box-shadow: 0px 4px 16px rgba(60, 45, 111, 0.1),
-      0px 1px 3px rgba(60, 45, 111, 0.15);
-  }
 
-  @media (max-width:700px){
-    flex:1;
-  }
-`
-
-const ButtonApps = styled.button`
-  text-align: center;
-  display: flex;
-  letter-spacing: 0.026em;
-  cursor: pointer;
-  font-size: 0.875rem;
-  text-transform: none;
-  background-color: transparent;
-  color: #000000;
-  outline: none;
-  padding: 8px 1.6em;
-  text-decoration: none;
-  border-radius: 3px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
-  border-image: initial;
-  margin-top:10px;
-  margin-left:10px;
-  width:200px;
-  &:hover {
-    border-color: #4c9ac0;
-    svg {
-      fill: #4c9ac0;
-    }
-  }
-  @media (max-width:700px){
-    margin-left:0px;
-  }
-`
 const ButtonsContainer = styled.div`
   display:flex;
   flex-direction:row;
@@ -74,17 +20,14 @@ const FormContent = styled.div`
 `
 
 const ContactUs = () => {
+  const { mode } = useContext(ModeContext);
   return (
     <Fragment>
       <section id="contact_section"
-        style={{
-          paddingTop: 100,
-          paddingBottom:100,
-          position:"relative",
-        }}
+        className={mode?"Card-Section-Dark":"Card-Section"}
       >
         <GridDiv>
-          <CardC>
+          <div className={mode?"Card-Container-Dark":"Card-Container"}>
             <h2
               style={{
                 paddingTop: 40,
@@ -92,13 +35,13 @@ const ContactUs = () => {
               }}
             >
               <SpanP>Connect </SpanP>
-              <span>with us</span>
+              <span className={mode?"Span-Dark":"Span"}>with us</span>
             </h2>
-            <SectionParagraph>
+            <h3 className={mode?"Paragraph-Dark":"Paragraph"}>
                 Get the TypeTech app to keep up to date and to use our realtime chat, it's great
-            </SectionParagraph>
+            </h3>
             <ButtonsContainer>
-            <ButtonApps>
+            <button className={mode?"Button-Dark":"Button"}>
               <svg
                 data-testid="icon-playstore"
                 viewBox="0 0 20 20"
@@ -118,8 +61,8 @@ const ContactUs = () => {
               <p>
                 Download the <SpanP>Android App</SpanP>
               </p>
-            </ButtonApps>
-            <ButtonApps>
+            </button>
+            <button className={mode?"Button-Dark":"Button"}>
               <svg
                 data-testid="icon-apple"
                 viewBox="0 0 20 20"
@@ -144,15 +87,15 @@ const ContactUs = () => {
               <p>
                 Download the <SpanP>iOS App</SpanP>
               </p>
-            </ButtonApps>
+            </button>
             </ButtonsContainer>
             <FormContent>
-            <SectionParagraph>
+            <h3 className={mode?"Paragraph-Dark":"Paragraph"}>
                 Subscribe to our newsletter
-            </SectionParagraph>
+            </h3>
               <ContactForm />
             </FormContent>
-          </CardC>
+          </div>
         </GridDiv>
       </section>
     </Fragment>
