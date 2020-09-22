@@ -20,9 +20,6 @@ const ModeProvider = props => {
     }
     return inStorage ? savedMode : false
   }
-  useEffect(() => {
-    initialState()
-  }, [])
 
   return (
     <ModeContext.Provider
