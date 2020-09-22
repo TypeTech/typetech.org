@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
 import { ModeContext } from "../../context/ModeContext"
-import "./stack.css"
+import "../../styles/stack.css"
 
 const Card = ({ image, title, description }) => {
   const { mode } = useContext(ModeContext)

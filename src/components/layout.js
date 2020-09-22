@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
-import "./Reusable/layout.css"
+import "../styles/layout.css"
 import Footer from "./footer"
 import { ModeContext } from "../context/ModeContext"
 
