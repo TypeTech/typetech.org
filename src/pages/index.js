@@ -13,25 +13,29 @@ import ModeProvider from "../context/ModeContext"
 const IndexPage = () => {
   return (
     <ModeProvider>
-      <Layout>
-        <SEO title="Home" />
-        <Introduction />
-        <Principles />
-        <Services />
-        <LazyLoad
-          placeholder={
-            <section
-              style={{
-                paddingBottom: 100,
-              }}
-            ></section>
-          }
-        >
-          <TechStack />
-        </LazyLoad>
-        <About />
-        <ContactUs />
-      </Layout>
+      <LazyLoad>
+        <Layout>
+          <SEO title="Home" />
+          <Introduction />
+          <LazyLoad>
+            <Principles />
+          </LazyLoad>
+          <Services />
+          <LazyLoad
+            placeholder={
+              <section
+                style={{
+                  paddingBottom: 100,
+                }}
+              ></section>
+            }
+          >
+            <TechStack />
+          </LazyLoad>
+          <About />
+          <ContactUs />
+        </Layout>
+      </LazyLoad>
     </ModeProvider>
   )
 }
