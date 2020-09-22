@@ -13,9 +13,9 @@ import ModeProvider from "../context/ModeContext"
 const IndexPage = () => {
   return (
     <ModeProvider>
+      <SEO title="Home" />
       <LazyLoad>
         <Layout>
-          <SEO title="Home" />
           <Introduction />
           <LazyLoad>
             <Principles />
