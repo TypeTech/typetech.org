@@ -19,7 +19,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
 `
-const SectionParagraph = styled.h5`
+const SectionParagraph = styled.h3`
   font-size: 20px;
   color: #ffffff;
   margin: 24px 0px;

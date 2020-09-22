@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Introduction from "../components/introduction"
@@ -11,6 +11,9 @@ import LazyLoad from "react-lazyload"
 import ModeProvider from "../context/ModeContext"
 
 const IndexPage = () => {
+  useEffect(() => {
+    console.log("Thank you for visiting TypeTech's 🧐👋")
+  }, [])
   return (
     <ModeProvider>
       <SEO title="Home" />

@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 
 const SpanP=styled.span`
-    color: #039BE5;
+    color: #007bb7;
 `;
 
 export default SpanP;

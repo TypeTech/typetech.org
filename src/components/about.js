@@ -61,7 +61,7 @@ const About = () => {
               className="Second-Card-Content-Dark"
             >
               <h1>{item.name}</h1>
-              <h4>{item.title}</h4>
+              <h3>{item.title}</h3>
               <h4>
                 <span
                   style={{
