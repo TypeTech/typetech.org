@@ -61,8 +61,10 @@ const About = () => {
               className="Second-Card-Content-Dark"
             >
               <h1>{item.name}</h1>
-              <h3>{item.title}</h3>
-              <h4>
+              <p>{item.title}</p>
+              <p style={{
+                fontSize: 17,
+              }}>
                 <span
                   style={{
                     color: "#1fb5ff",
@@ -71,9 +73,11 @@ const About = () => {
                   Field:{" "}
                 </span>
                 <span>{item.role}</span>
-              </h4>
+              </p>
               <InsideFooter>
-                <span>Social contact</span>
+                <h2 style={{
+                  fontSize:20
+                }}>Social contact</h2>
                 <SocialLinks>
                   <a href={item.website}>
                     <SVGs
