@@ -1,13 +1,11 @@
-import React, { useContext } from "react"
+import React from "react"
 import SpanP from "./Reusable/SpanP"
 import styled from "@emotion/styled"
 import GridDiv from "./Reusable/GridDiv"
 import CardContainer from "./Reusable/CardContainer"
-import CardContent from "./Reusable/CardContent"
 import CardLogo from "./Reusable/CardLogo"
 import SectionDesc from "./Reusable/SectionDesc"
 import "../styles/main.css"
-import { ModeContext } from "../context/ModeContext"
 import { SERVICES } from "../data/services"
 
 const Spanx = styled.span`
@@ -34,12 +32,8 @@ const Section = styled.section`
   padding-bottom: 100px;
 `
 
-const SVGs = styled.svg`
-  fill: #ffffff;
-`
 
 const Services = () => {
-  const { mode } = useContext(ModeContext)
   return (
     <Section>
       <Container>

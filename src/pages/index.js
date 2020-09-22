@@ -30,17 +30,7 @@ const IndexPage = () => {
           <TechStack />
         </LazyLoad>
         <About />
-        <LazyLoad
-          placeholder={
-            <section
-              style={{
-                paddingBottom: 100,
-              }}
-            ></section>
-          }
-        >
-          <ContactUs />
-        </LazyLoad>
+        <ContactUs />
       </Layout>
     </ModeProvider>
   )

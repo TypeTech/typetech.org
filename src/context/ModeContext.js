@@ -1,26 +1,10 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import useLocalStorage from '../hooks/useLocalStorage'
 
 export const ModeContext = React.createContext()
 
 const ModeProvider = props => {
   const [mode, setMode] = useLocalStorage('modex',false)
-
-  // useEffect(() => {
-  //   if (typeof window !== "undefined") {
-  //     localStorage.setItem("mode", JSON.stringify(mode))
-  //   }
-  // }, [mode])
-
-  // function initialState() {
-  //   let inStorage
-  //   let savedMode
-  //   if (typeof window !== "undefined") {
-  //     inStorage = "mode" in localStorage
-  //     savedMode = JSON.parse(localStorage.getItem("mode"))
-  //   }
-  //   return inStorage ? savedMode : false
-  // }
 
   return (
     <ModeContext.Provider
