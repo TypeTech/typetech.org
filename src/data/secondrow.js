@@ -1,6 +1,6 @@
-import angularLogo from "../images/angular-icon-1.svg"
-import netlifylogo from "../images/netlify.svg"
-import vercellogo from "../images/vercel_logo.svg"
+import angularLogo from "../images/techstack/angular-icon-1.svg"
+import netlifylogo from "../images/techstack/netlify.svg"
+import vercellogo from "../images/techstack/vercel_logo.svg"
 
 export const SECONDROW = [
   {

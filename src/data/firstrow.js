@@ -1,21 +1,24 @@
-import reactLogo from "../images/react-2.svg"
-import nextjs from "../images/nextjs-3 (1).svg"
-import gatsby from "../images/gatsby.svg"
+import reactLogo from "../images/techstack/react-2.svg"
+import nextjs from "../images/techstack/nextjs-3 (1).svg"
+import gatsby from "../images/techstack/gatsby.svg"
 
 export const FIRSTROW = [
   {
     image: reactLogo,
     title: "React",
     description: "Frontend development",
+    darkmode: false,
   },
   {
     image: nextjs,
     title: "Nextjs",
     description: "Frontend development",
+    darkmode: true,
   },
   {
     image: gatsby,
     title: "Gatsby",
     description: "Frontend development",
+    darkmode: false,
   },
 ]
