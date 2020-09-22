@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import React, { useContext, Fragment } from "react"
-import Logomain from "./logomain"
+import Logomain from "../logomain"
 import styled from "@emotion/styled"
-import { ModeContext } from "../context/ModeContext"
+import { ModeContext } from "../../context/ModeContext"
 
 const WrapperDiv = styled.div`
   position: sticky;

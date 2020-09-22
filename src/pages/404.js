@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import styled from "@emotion/styled"
 import ModeProvider from "../context/ModeContext"

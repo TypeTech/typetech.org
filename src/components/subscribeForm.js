@@ -38,17 +38,17 @@ const SubscribeForm = ({ status, message, onValidated }) => {
         display: "inline-block",
       }}
     >
-      <label htmlFor="email" className={mode ? "Label-Dark" : "Label"}>
+      <label className={mode ? "Label-Dark" : "Label"}>
         Subscribe via e-mail:
+        <br></br>
+        <input
+          ref={node => (email = node)}
+          type="email"
+          name="email"
+          placeholder="Your email here"
+          className={mode ? "Input-Dark" : "Input"}
+        />
       </label>
-      <br></br>
-      <input
-        ref={node => (email = node)}
-        type="email"
-        name="email"
-        placeholder="Your email here"
-        className={mode ? "Input-Dark" : "Input"}
-      />
       <br />
       <br />
       {status === "error" && (

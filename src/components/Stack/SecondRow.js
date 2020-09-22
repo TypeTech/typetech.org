@@ -1,11 +1,11 @@
 import React, { Fragment } from "react"
-import Card from "./Stack/CardComponent"
-import { THIRDROW } from "../data/thirdrow"
+import { SECONDROW } from "../../data/secondrow"
+import Card from "./CardComponent"
 
-const ThirdRow = () => {
+const SecondRow = () => {
   return (
     <Fragment>
-      {THIRDROW.map(item => (
+      {SECONDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -13,7 +13,7 @@ const ThirdRow = () => {
           description={item.description}
         />
       ))}
-      {THIRDROW.map(item => (
+      {SECONDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -21,7 +21,7 @@ const ThirdRow = () => {
           description={item.description}
         />
       ))}
-      {THIRDROW.map(item => (
+      {SECONDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -29,7 +29,7 @@ const ThirdRow = () => {
           description={item.description}
         />
       ))}
-      {THIRDROW.map(item => (
+      {SECONDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -37,7 +37,7 @@ const ThirdRow = () => {
           description={item.description}
         />
       ))}
-      {THIRDROW.map(item => (
+      {SECONDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -45,7 +45,7 @@ const ThirdRow = () => {
           description={item.description}
         />
       ))}
-      {THIRDROW.map(item => (
+      {SECONDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -57,4 +57,4 @@ const ThirdRow = () => {
   )
 }
 
-export default ThirdRow
+export default SecondRow

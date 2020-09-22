@@ -1,11 +1,11 @@
 import React, { Fragment } from "react"
-import { FIRSTROW } from "../data/firstrow"
-import Card from "./Stack/CardComponent"
+import { FOURTHDROW } from "../../data/fourthrow"
+import Card from "./CardComponent"
 
-const FirstRow = () => {
+const FourthRow = () => {
   return (
     <Fragment>
-      {FIRSTROW.map(item => (
+      {FOURTHDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -13,7 +13,7 @@ const FirstRow = () => {
           description={item.description}
         />
       ))}
-      {FIRSTROW.map(item => (
+      {FOURTHDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -21,7 +21,7 @@ const FirstRow = () => {
           description={item.description}
         />
       ))}
-      {FIRSTROW.map(item => (
+      {FOURTHDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -29,7 +29,7 @@ const FirstRow = () => {
           description={item.description}
         />
       ))}
-      {FIRSTROW.map(item => (
+      {FOURTHDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -37,7 +37,7 @@ const FirstRow = () => {
           description={item.description}
         />
       ))}
-      {FIRSTROW.map(item => (
+      {FOURTHDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -45,7 +45,7 @@ const FirstRow = () => {
           description={item.description}
         />
       ))}
-      {FIRSTROW.map(item => (
+      {FOURTHDROW.map(item => (
         <Card
           key={item.title}
           image={item.image}
@@ -57,4 +57,4 @@ const FirstRow = () => {
   )
 }
 
-export default FirstRow
+export default FourthRow
