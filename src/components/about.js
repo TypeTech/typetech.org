@@ -13,13 +13,13 @@ const Container = styled.div`
   width: 100%;
   padding-top: 5em;
   padding-bottom: 5em;
-  background: #292929;
+  background: #1c1f24;
   display: flex;
   justify-content: center;
 `
 
 const Section = styled.section`
-  background-color: #292929;
+  background-color: #1c1f24;
   color: #ffffff;
   padding-bottom: 100px;
 `
@@ -58,7 +58,7 @@ const About = () => {
         {TEAM.map(item => (
           <CardContainer key={item.name}>
             <div
-              className="Main-Card-Content-Dark"
+              className="Second-Card-Content-Dark"
             >
               <h1>{item.name}</h1>
               <h4>{item.title}</h4>

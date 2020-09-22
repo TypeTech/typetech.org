@@ -6,7 +6,7 @@
 }
 
 .Card-Section-Dark {
-  background-color: #111;
+  background-color: #181A1E;
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
@@ -36,7 +36,7 @@
 }
 
 .Card-Container-Dark {
-  background-color: #232323;
+  background-color: #1c1f24;
   display: flex;
   width: 100%;
   flex-direction: column;
