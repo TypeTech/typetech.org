@@ -3,7 +3,7 @@ module.exports = {
     title: `TypeTech`,
     description: `We are TypeTech, a group of devs dedicated to Open Sourcing and freelancing software with cutting edge technologies`,
     author: `@typetech`,
-    location:`Currently outsourcing only in the Americas 🌎`
+    location: `Currently outsourcing only in the Americas 🌎`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,6 +26,17 @@ module.exports = {
         theme_color: `#039be5`,
         display: `minimal-ui`,
         icon: `src/images/typetechlogo.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Open Sans`,
+            variants: [`400`, `500`, `600`, `700`, `800`, `900`],
+          },
+        ],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
