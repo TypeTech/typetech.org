@@ -4,6 +4,7 @@ module.exports = {
     description: `We are TypeTech, a group of devs dedicated to Open Sourcing and freelancing software with cutting edge technologies`,
     author: `@typetech`,
     location: `Currently outsourcing only in the Americas 🌎`,
+    siteUrl: "https://typetech.vercel.app",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `typetech-website`,
+        short_name: `typetech`,
         start_url: `/`,
         background_color: `#039be5`,
         theme_color: `#039be5`,
@@ -39,6 +40,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-robots-txt`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
