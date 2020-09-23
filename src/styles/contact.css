@@ -7,7 +7,7 @@
 }
 
 .Card-Section-Dark {
-  background-color: #181A1E;
+  background-color: #181a1e;
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
@@ -15,6 +15,7 @@
 }
 
 .Card-Container {
+  background-color: #fdfdfd;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -200,6 +201,13 @@
   padding-bottom: 20px;
 }
 
+.Spanps-light {
+  color: #007bb7;
+}
+.Spanps-dark {
+  color: #4c9ac0;
+}
+
 @media (max-width: 700px) {
   .Card-Container {
     flex: 1;
@@ -209,8 +217,9 @@
     flex: 1;
   }
 
-  .Paragraph,.Paragraph-Dark{
+  .Paragraph,
+  .Paragraph-Dark {
     font-size: 1rem;
-    margin:20px;
+    margin: 20px;
   }
 }

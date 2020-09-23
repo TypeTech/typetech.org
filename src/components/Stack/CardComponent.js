@@ -9,11 +9,7 @@ const Card = ({ image, title, description }) => {
       <div className="courses-container">
         <div className={mode ? "stacklogo-dark" : "stacklogo-light"}>
           <div className={mode ? "card-preview-dark" : "card-preview"}>
-            <img
-              src={image}
-              alt={title}
-              className="logo-dark"
-            />
+            <img src={image} alt={title} className="logo-dark" />
           </div>
           <div className="card-info">
             <h2>{title}</h2>

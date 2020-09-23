@@ -64,7 +64,10 @@ const ContactUs = () => {
                     fontWeight: 600,
                   }}
                 >
-                  Download the <SpanP>Android App</SpanP>
+                  Download the{" "}
+                  <span className={mode ? "Spanps-dark" : "Spanps-light"}>
+                    Android App
+                  </span>
                 </p>
               </button>
               <button className={mode ? "Button-Dark" : "Button"}>
@@ -94,7 +97,10 @@ const ContactUs = () => {
                     fontWeight: 600,
                   }}
                 >
-                  Download the <SpanP>iOS App</SpanP>
+                  Download the{" "}
+                  <span className={mode ? "Spanps-dark" : "Spanps-light"}>
+                    iOS App
+                  </span>
                 </p>
               </button>
             </ButtonsContainer>
