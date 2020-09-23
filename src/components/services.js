@@ -30,7 +30,7 @@ const Services = () => {
       <GridDiv>
         {SERVICES.map(item => (
           <CardContainer key={item.title}>
-            <div className="Second-Card-Content-Dark">
+            <div className={mode ? "Second-Card-Content-Dark" : "Second-Card-Content-Light"}>
               <CardLogo>
                 {!mode ? (
                   <img src={item.iconDark} alt={item.title} />

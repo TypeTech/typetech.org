@@ -9,7 +9,7 @@ export const TEAM = [
     {
         name: 'Michael Soro',
         title: 'Software engineer',
-        role: 'Mobile & Web development',
+        role: 'Mobile/Web development',
         website: '',
         github:'',
     },
