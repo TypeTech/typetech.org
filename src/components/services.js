@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useContext } from "react"
 import SpanP from "./Reusable/SpanP"
 import styled from "@emotion/styled"
 import GridDiv from "./Reusable/GridDiv"
@@ -6,53 +6,37 @@ import CardContainer from "./Reusable/CardContainer"
 import CardLogo from "./Reusable/CardLogo"
 import SectionDesc from "./Reusable/SectionDesc"
 import "../styles/main.css"
+import "../styles/services.css"
 import { SERVICES } from "../data/services"
-
-const Spanx = styled.span`
-  color: #ffffff;
-`
-const Container = styled.div`
-  width: 100%;
-  padding-top: 5em;
-  padding-bottom: 3em;
-  background: #1c1f24;
-  display: flex;
-  justify-content: center;
-`
-const SectionParagraph = styled.h3`
-  font-size: 20px;
-  color: #ffffff;
-  margin: 24px 0px;
-  text-align: center;
-`
-
-const Section = styled.section`
-  background-color: #1c1f24;
-  color: #ffffff;
-  padding-bottom: 100px;
-`
-
+import { ModeContext } from "../context/ModeContext"
 
 const Services = () => {
+  const { mode } = useContext(ModeContext)
   return (
-    <Section>
-      <Container>
+    <section className={mode ? "Section-S-Dark" : "Section-S-Light"}>
+      <div
+        className={mode ? "Head-S-Container-Dark" : "Head-S-Container-Light"}
+      >
         <h2>
-          <Spanx>Our</Spanx> <SpanP>services</SpanP>
+          <span className={mode ? "SpanHead-Dark" : "SpanHead-Light"}>Our</span>{" "}
+          <SpanP>services</SpanP>
         </h2>
-      </Container>
+      </div>
       <SectionDesc>
-        <SectionParagraph>
+        <h3 className={mode ? "Paragraph-S-Dark" : "Paragraph-S-Light"}>
           Some of the services that we provide
-          <br />
-        </SectionParagraph>
+        </h3>
       </SectionDesc>
       <GridDiv>
         {SERVICES.map(item => (
           <CardContainer key={item.title}>
             <div className="Second-Card-Content-Dark">
               <CardLogo>
-                <img src={item.icon} alt={item.title} />
+                {!mode ? (
+                  <img src={item.iconDark} alt={item.title} />
+                ) : (
+                  <img src={item.icon} alt={item.title} />
+                )}
               </CardLogo>
               <h1>
                 <SpanP>{item.title}</SpanP> {item.main}
@@ -62,7 +46,7 @@ const Services = () => {
           </CardContainer>
         ))}
       </GridDiv>
-    </Section>
+    </section>
   )
 }
 

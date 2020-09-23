@@ -2,10 +2,15 @@ import Custom from "../images/services/custom.svg"
 import Styling from "../images/services/styling.svg"
 import Dynamic from "../images/services/dynamic.svg"
 import Static from "../images/services/static.svg"
+import CustomDark from "../images/services/custom-dark.svg"
+import StylingDark from "../images/services/styling-dark.svg"
+import DynamicDark from "../images/services/dynamic-dark.svg"
+import StaticDark from "../images/services/static-dark.svg"
 
 export const SERVICES = [
   {
     icon: Static,
+    iconDark: StaticDark,
     title: "Static",
     main: "Websites",
     description:
@@ -13,6 +18,7 @@ export const SERVICES = [
   },
   {
     icon: Dynamic,
+    iconDark: DynamicDark,
     title: "Dynamic",
     main: "Websites",
     description:
@@ -20,6 +26,7 @@ export const SERVICES = [
   },
   {
     icon: Custom,
+    iconDark: CustomDark,
     title: "Custom",
     main: "Software",
     description:
@@ -27,6 +34,7 @@ export const SERVICES = [
   },
   {
     icon: Styling,
+    iconDark: StylingDark,
     title: "Styling",
     main: "Templates",
     description:

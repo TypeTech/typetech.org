@@ -1,0 +1,53 @@
+.Section-S-Light{
+    background-color: #ececec;
+    color: #000;
+    padding-bottom: 100px;
+    transition: 0.5s ease;
+}
+
+.Section-S-Dark{
+    background-color: #1c1f24;
+    color: #ffffff;
+    padding-bottom: 100px;
+    transition:  0.5s ease;
+}
+
+.Head-S-Container-Light{
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    background: #ececec;
+    display: flex;
+    justify-content: center;
+    transition: background 0.5s ease;
+}
+.Head-S-Container-Dark{
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    background: #1c1f24;
+    display: flex;
+    justify-content: center;
+    transition: background 0.5s ease;
+}
+
+
+.SpanHead-Light{
+    color:#000;
+}
+.SpanHead-Dark{
+    color:#fff;
+}
+
+.Paragraph-S-Light{
+    font-size: 20px;
+    color: #000;
+    margin: 24px 0px;
+    text-align: center;
+}
+.Paragraph-S-Dark{
+    font-size: 20px;
+    color: #ffffff;
+    margin: 24px 0px;
+    text-align: center;
+}
