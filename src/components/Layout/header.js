@@ -187,7 +187,7 @@ const Header = ({ siteTitle }) => {
                       </a>
                     </NavItems>
                     <NavItems>
-                      <ButtonSwitch onClick={() => setMode(!mode)} name="Switch mode">
+                      <ButtonSwitch onClick={() => setMode(!mode)} name="Switch mode" aria-hidden="true">
                         {!mode ? (
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
