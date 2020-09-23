@@ -7,22 +7,22 @@ const Card = ({ image, title, description }) => {
   return (
     <div>
       <div className="courses-container">
-        <div className={mode ? "stacklogo-dark" : "stacklogo"}>
-          <div className={mode ? "course-preview-dark" : "course-preview"}>
+        <div className={mode ? "stacklogo-dark" : "stacklogo-light"}>
+          <div className={mode ? "card-preview-dark" : "card-preview"}>
             <img
               src={image}
               alt={title}
-              className={mode ? "logo-dark" : "logo"}
+              className="logo-dark"
             />
           </div>
-          <div className="course-info">
+          <div className="card-info">
             <h2>{title}</h2>
             <p>{description}</p>
           </div>
         </div>
       </div>
-      <div className="courses-separate">
-        <div className={mode ? "course-preview-dark" : "course-preview-dark"}>
+      <div className="cards-separate">
+        <div className={mode ? "card-preview-dark" : "card-preview-dark"}>
           <img
             src={image}
             alt={title}

@@ -2,8 +2,7 @@
 	box-sizing: border-box;
 }
 
-
-.stacklogo {
+.stacklogo-light {
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
@@ -15,7 +14,7 @@
 }
 
 .stacklogo-dark {
-	background-color: #292929;
+	background-color: #1c1f24;
 	border-radius: 10px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
@@ -37,19 +36,19 @@
 	margin: 10px 0;
 }
 
-.course-preview {
+.card-preview {
 	color: #fff;
 	padding: 30px;
 	max-width: 250px;
 }
 
-.course-preview-dark{
+.card-preview-dark{
 	color: #fff;
 	padding: 30px;
 	max-width: 250px;
 }
 
-.course-preview a {
+.card-preview a {
 	color: #fff;
 	display: inline-block;
 	font-size: 12px;
@@ -58,7 +57,7 @@
 	text-decoration: none;
 }
 
-.course-info {
+.card-info {
 	padding: 30px;
 	position: relative;
 	width: 100%;
@@ -253,7 +252,7 @@
 	text-align: center;
 	z-index: 998;
 }
-.courses-separate{
+.cards-separate{
 	display: none;
 }
 
@@ -263,7 +262,7 @@
 	text-decoration: none;
 }
 
-.logo{
+.logo-light{
 	width: 60px;
     padding: 0;
     margin: 0;
@@ -293,7 +292,7 @@
 	.courses-container{
 		display: none;
 	}
-	.courses-separate{
+	.card-separate{
 		display: block;
 	}
 	.logo{
@@ -301,12 +300,12 @@
 		padding: 0;
 		margin: 0;
 	}
-	.course-preview{
+	.card-preview{
 		margin: 0;
 		padding: 0;
 	}
 
-	.course-info{
+	.card-info{
 		display: none;
 	}
 }

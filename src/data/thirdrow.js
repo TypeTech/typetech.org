@@ -1,6 +1,6 @@
-import dotnetLogo from "../images/dot-net-core-7.svg"
-import laravelLogo from "../images/laravel-2.svg"
-import nodeLogo from "../images/nodejs-icon.svg"
+import dotnetLogo from "../images/techstack/dot-net-core-7.svg"
+import laravelLogo from "../images/techstack/laravel-2.svg"
+import nodeLogo from "../images/techstack/nodejs-icon.svg"
 
 export const THIRDROW = [
   {

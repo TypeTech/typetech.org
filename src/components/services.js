@@ -15,11 +15,11 @@ const Container = styled.div`
   width: 100%;
   padding-top: 5em;
   padding-bottom: 3em;
-  background: #292929;
+  background: #1c1f24;
   display: flex;
   justify-content: center;
 `
-const SectionParagraph = styled.h5`
+const SectionParagraph = styled.h3`
   font-size: 20px;
   color: #ffffff;
   margin: 24px 0px;
@@ -27,7 +27,7 @@ const SectionParagraph = styled.h5`
 `
 
 const Section = styled.section`
-  background-color: #292929;
+  background-color: #1c1f24;
   color: #ffffff;
   padding-bottom: 100px;
 `
@@ -50,7 +50,7 @@ const Services = () => {
       <GridDiv>
         {SERVICES.map(item => (
           <CardContainer key={item.title}>
-            <div className="Main-Card-Content-Dark">
+            <div className="Second-Card-Content-Dark">
               <CardLogo>
                 <img src={item.icon} alt={item.title} />
               </CardLogo>

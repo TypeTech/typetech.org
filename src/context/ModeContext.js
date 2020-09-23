@@ -1,10 +1,17 @@
 import React from "react"
-import useLocalStorage from '../hooks/useLocalStorage'
+import useLocalStorage from "../hooks/useLocalStorage"
 
 export const ModeContext = React.createContext()
 
 const ModeProvider = props => {
-  const [mode, setMode] = useLocalStorage('modex',false)
+  const [mode, setMode] = useLocalStorage("modex", userColorScheme())
+
+  function userColorScheme() {
+    if (typeof window !== "undefined") {
+      if (!window.matchMedia) return
+      return window.matchMedia("(prefers-color-scheme:dark)").matches
+    }
+  }
 
   return (
     <ModeContext.Provider

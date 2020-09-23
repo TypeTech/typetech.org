@@ -1,20 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Logomain from "../logomain"
+import "../../styles/footer.css"
 
 
 const Footer = ({ siteTitle }) => {
   return (
     <>
-      <footer>
-        <div className="container-footer-all">
-          <div className="container-body">
-            <div className="column1">
-              <Logomain />
-              {siteTitle}
-            </div>
-          </div>
-        </div>
+      <footer className="Footer-Container">
+
         <div className="container-footer">
           <div className="footer">
             <div className="copyright">2020 TypeTech | All rights reserved</div>
