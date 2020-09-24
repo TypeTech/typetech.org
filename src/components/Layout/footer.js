@@ -53,11 +53,6 @@ const Footer = ({ siteTitle }) => {
               >
                 Newsletter
               </a>
-              <a
-                href="https://github.com/TypeTech"
-                target="blank"
-                className={mode ? "Footer-links-dark" : "Footer-links-light"}
-              ></a>
             </div>
             <div className="Footer-Insider-Column">
               <p className="Column-Paragraph">Legal</p>

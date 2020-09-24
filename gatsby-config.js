@@ -1,10 +1,18 @@
+const website = require("./config/website")
+const pathPrefix = website.pathPrefix === "/" ? "" : website.pathPrefix
+
 module.exports = {
   siteMetadata: {
-    title: `TypeTech`,
-    description: `We are TypeTech, a group of devs dedicated to Open Sourcing and freelancing software with cutting edge technologies`,
-    author: `@typetech`,
-    location: `Currently outsourcing only in the Americas 🌎`,
-    siteUrl: "https://typetech.vercel.app",
+    siteUrl: website.url + pathPrefix,
+    pathPrefix: website.pathPrefix,
+    title: website.title,
+    titleAlt: website.titleAlt,
+    description: website.description,
+    banner: website.logo,
+    siteLanguage: website.siteLanguage,
+    author: website.author,
+    location: website.location,
+    ogLanguage: website.ogLanguage,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,13 +28,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `typetech-website`,
-        short_name: `typetech`,
-        start_url: `/`,
-        background_color: `#039be5`,
-        theme_color: `#039be5`,
-        display: `minimal-ui`,
-        icon: `src/images/typetechlogo.png`,
+        name: website.title,
+        short_name: website.titleAlt,
+        description: website.description,
+        start_url: pathPrefix,
+        background_color: website.background_color,
+        theme_color: website.theme_color,
+        display: website.display,
+        icon: website.icon,
       },
     },
     {
