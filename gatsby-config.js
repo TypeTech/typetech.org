@@ -31,7 +31,7 @@ module.exports = {
         name: website.title,
         short_name: website.titleAlt,
         description: website.description,
-        start_url: pathPrefix,
+        start_url: website.pathPrefix,
         background_color: website.background_color,
         theme_color: website.theme_color,
         display: website.display,
