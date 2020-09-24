@@ -38,8 +38,14 @@ module.exports = {
         icon: website.icon,
         icons: [
           {
-            src: '/icons/typetech_mask.png',
+            src: '/icons/typetech_mask_192.png',
             sizes: '192x192',
+            type: 'image/png',
+            purpose: 'maskable'
+          },
+          {
+            src: '/icons/typetech_mask_512.png',
+            sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
           },
