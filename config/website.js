@@ -10,8 +10,8 @@ module.exports = {
   location: "Currently outsourcing only in the Americas 🌎",
   logo: "/logos/typetechlogo.png",
   ogLanguage: "en_US",
-  background_color: `#039be5`,
+  background_color: `#1c1f24`,
   theme_color: `#039be5`,
-  display: `minimal-ui`,
+  display: 'standalone',
   icon: `src/images/typetechlogo.png`,
 }
