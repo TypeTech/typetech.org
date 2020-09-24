@@ -2,7 +2,6 @@ import React, { useContext } from "react"
 import "../styles/contact.css"
 import { ModeContext } from "../context/ModeContext"
 
-
 const SubscribeForm = ({ status, message, onValidated }) => {
   const { mode } = useContext(ModeContext)
   let email
@@ -16,7 +15,14 @@ const SubscribeForm = ({ status, message, onValidated }) => {
   return (
     <>
       <label className={mode ? "Label-Dark" : "Label"}>
-        Get the latest news about TypeTech
+        Get the latest news about{" "}
+        <span
+          style={{
+            color: "#4c9ac0",
+          }}
+        >
+          TypeTech
+        </span>
         <br></br>
         <input
           ref={node => (email = node)}
@@ -26,18 +32,6 @@ const SubscribeForm = ({ status, message, onValidated }) => {
           className={mode ? "Input-Dark" : "Input"}
         />
       </label>
-      {status === "error" && (
-        <div
-          style={{ color: "red" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-      {status === "success" && (
-        <div
-          style={{ color: "green" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
       <button
         onClick={submit}
         disabled={status === "sending" ? true : false}
@@ -45,6 +39,24 @@ const SubscribeForm = ({ status, message, onValidated }) => {
       >
         {status === "sending" ? "Sending ..." : "Subscribe"}
       </button>
+      {status === "error" && (
+        <>
+          <br></br>
+          <div
+            style={{ color: "red" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        </>
+      )}
+      {status === "success" && (
+        <>
+          <br></br>
+          <div
+            style={{ color: "green" }}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
+        </>
+      )}
     </>
   )
 }

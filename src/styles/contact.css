@@ -147,8 +147,8 @@
 }
 
 .Input {
-   width: 70%;
-   float: left;
+  width: 70%;
+  float: left;
   text-align: left;
   letter-spacing: 0.026em;
   cursor: pointer;
@@ -157,7 +157,7 @@
   background-color: transparent;
   color: #000000;
   outline: none;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
   border-radius: 3px;
   border-width: 2px;
@@ -169,7 +169,7 @@
 
 .Input-Dark {
   width: 70%;
-   float: left;
+  float: left;
   text-align: left;
   letter-spacing: 0.026em;
   cursor: pointer;
@@ -178,7 +178,7 @@
   background-color: transparent;
   color: #fff;
   outline: none;
-  padding: .75rem;
+  padding: 0.75rem;
   text-decoration: none;
   border-radius: 3px;
   border-width: 2px;
@@ -208,7 +208,6 @@
   padding-bottom: 20px;
   font-size: 2rem;
   font-weight: 700;
-
 }
 
 .Spanps-light {
@@ -222,7 +221,7 @@
   margin: 0px;
   float: left;
   width: 20%;
-  padding: .87rem;
+  padding: 0.87rem;
   background-color: #4c9ac0;
   border: none;
   border-top-right-radius: 0.5rem;
@@ -232,7 +231,7 @@
   color: #ffffff;
   transition: background-color 1s ease;
   align-items: center;
-  border-left: none; 
+  border-left: none;
   justify-content: center;
   position: relative;
   left: -5px;
@@ -255,5 +254,22 @@
   .Paragraph-C-Dark {
     font-size: 1rem;
     margin: 20px;
+  }
+
+  .Label,
+  .Label-Dark {
+    font-size: 1.2rem;
+  }
+  .Input,
+  .Input-Dark {
+    margin-top: 20px;
+    width: 100%;
+    border-right-width: 2px;
+  }
+  .Subscribe-Form-Button {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-left: 4px;
   }
 }
