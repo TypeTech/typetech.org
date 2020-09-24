@@ -36,6 +36,18 @@ module.exports = {
         theme_color: website.theme_color,
         display: website.display,
         icon: website.icon,
+        icons: [
+          {
+            src: '/icons/typetech_mask.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/icons/typetech_mask.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ]
       },
     },
     {
