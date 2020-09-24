@@ -1,6 +1,5 @@
 import React, { useContext } from "react"
 import SpanP from "./Reusable/SpanP"
-import styled from "@emotion/styled"
 import GridDiv from "./Reusable/GridDiv"
 import CardContainer from "./Reusable/CardContainer"
 import CardLogo from "./Reusable/CardLogo"

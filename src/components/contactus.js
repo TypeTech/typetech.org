@@ -1,7 +1,6 @@
 import React, { Fragment, useContext } from "react"
 import SpanP from "./Reusable/SpanP"
 import styled from "@emotion/styled"
-import ContactForm from "./contactform"
 import GridDiv from "./Reusable/GridDiv"
 import "../styles/contact.css"
 import { ModeContext } from "../context/ModeContext"
@@ -37,7 +36,7 @@ const ContactUs = () => {
               <SpanP>Connect </SpanP>
               <span className={mode ? "Span-Dark" : "Span"}>with us</span>
             </h2>
-            <h3 className={mode ? "Paragraph-Dark" : "Paragraph"}>
+            <h3 className={mode ? "Paragraph-C-Dark" : "Paragraph-C-Light"}>
               Get the TypeTech app to keep up to date and to use our realtime
               chat, it's great
             </h3>
@@ -105,10 +104,6 @@ const ContactUs = () => {
               </button>
             </ButtonsContainer>
             <FormContent>
-              <h3 className={mode ? "Paragraph-Dark" : "Paragraph"}>
-                Subscribe to our newsletter
-              </h3>
-              <ContactForm />
             </FormContent>
           </div>
         </GridDiv>

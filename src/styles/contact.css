@@ -3,6 +3,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
+  justify-content: center;
   transition: background-color 0.5s ease;
 }
 
@@ -62,7 +63,7 @@
     0px 1px 3px rgba(60, 45, 111, 0.15);
 }
 
-.Paragraph {
+.Paragraph-C-Light {
   font-size: 20px;
   margin: 24px 0px;
   margin-bottom: 30px;
@@ -70,7 +71,7 @@
   color: #000000;
 }
 
-.Paragraph-Dark {
+.Paragraph-C-Dark {
   color: #fff;
   font-size: 20px;
   margin: 24px 0px;
@@ -99,13 +100,13 @@
   padding: 8px 1.6em;
   text-decoration: none;
   border-radius: 3px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #000000;
   border-image: initial;
   margin-top: 10px;
   margin-left: 10px;
-  width: 200px;
+  width: 230px;
 }
 
 .Button-Dark {
@@ -121,13 +122,13 @@
   padding: 8px 1.6em;
   text-decoration: none;
   border-radius: 3px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #fff;
   border-image: initial;
   margin-top: 10px;
   margin-left: 10px;
-  width: 200px;
+  width: 230px;
 }
 
 .Button:hover {
@@ -146,8 +147,9 @@
 }
 
 .Input {
-  display: inline-block;
-  text-align: center;
+   width: 70%;
+   float: left;
+  text-align: left;
   letter-spacing: 0.026em;
   cursor: pointer;
   font-size: 1rem;
@@ -155,18 +157,20 @@
   background-color: transparent;
   color: #000000;
   outline: none;
-  padding: 10px 2em;
+  padding: .75rem;
   text-decoration: none;
   border-radius: 3px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #000000;
   border-image: initial;
+  border-right-width: 0;
 }
 
 .Input-Dark {
-  display: inline-block;
-  text-align: center;
+  width: 70%;
+   float: left;
+  text-align: left;
   letter-spacing: 0.026em;
   cursor: pointer;
   font-size: 1rem;
@@ -174,13 +178,14 @@
   background-color: transparent;
   color: #fff;
   outline: none;
-  padding: 10px 2em;
+  padding: .75rem;
   text-decoration: none;
   border-radius: 3px;
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   border-color: #fff;
   border-image: initial;
+  border-right-width: 0;
 }
 
 .Input:focus {
@@ -194,11 +199,16 @@
 .Label {
   color: #000000;
   padding-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .Label-Dark {
   color: #fff;
   padding-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+
 }
 
 .Spanps-light {
@@ -206,6 +216,30 @@
 }
 .Spanps-dark {
   color: #4c9ac0;
+}
+
+.Subscribe-Form-Button {
+  margin: 0px;
+  float: left;
+  width: 20%;
+  padding: .87rem;
+  background-color: #4c9ac0;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: background-color 1s ease;
+  align-items: center;
+  border-left: none; 
+  justify-content: center;
+  position: relative;
+  left: -5px;
+}
+.Subscribe-Form-Button:hover {
+  cursor: pointer;
+  background-color: #1476a2;
 }
 
 @media (max-width: 700px) {
@@ -217,8 +251,8 @@
     flex: 1;
   }
 
-  .Paragraph,
-  .Paragraph-Dark {
+  .Paragraph-C-Light,
+  .Paragraph-C-Dark {
     font-size: 1rem;
     margin: 20px;
   }

@@ -1,23 +1,83 @@
-import React from "react"
+import React, { useContext } from "react"
 import PropTypes from "prop-types"
-import Logomain from "../logomain"
 import "../../styles/footer.css"
-
+import { ModeContext } from "../../context/ModeContext"
+import ContactForm from "../contactform"
 
 const Footer = ({ siteTitle }) => {
+  const { mode } = useContext(ModeContext)
   return (
     <>
-      <footer className="Footer-Container">
-
-        <div className="container-footer">
-          <div className="footer">
-            <div className="copyright">2020 TypeTech | All rights reserved</div>
-            <div className="information">
-              <a href="https://github.com/TypeTech" target="blank">
-                <span style={{
-                  paddingLeft:10
-                }}>GitHub</span>
+      <footer
+        className={mode ? "Footer-Container-Dark" : "Footer-Container-Light"}
+      >
+        <div className="Footer-Insider">
+          <div className="Footer-Insider-C1">
+            <div className="Footer-Insider-Column">
+              <p className="Column-Paragraph">Organization</p>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              >
+                About us
               </a>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              >
+                Blog
+              </a>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              >
+                GitHub
+              </a>
+            </div>
+            <div className="Footer-Insider-Column">
+              <p className="Column-Paragraph">Services</p>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              >
+                Pricing
+              </a>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              >
+                Newsletter
+              </a>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              ></a>
+            </div>
+            <div className="Footer-Insider-Column">
+              <p className="Column-Paragraph">Legal</p>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              >
+                Terms
+              </a>
+              <a
+                href="https://github.com/TypeTech"
+                target="blank"
+                className={mode ? "Footer-links-dark" : "Footer-links-light"}
+              >
+                Privacy
+              </a>
+            </div>
+            <div className="Footer-Insider-Column">
+              <ContactForm />
             </div>
           </div>
         </div>
