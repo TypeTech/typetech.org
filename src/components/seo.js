@@ -9,9 +9,16 @@ function SEO({ description, lang, meta, title }) {
       query {
         site {
           siteMetadata {
+            siteUrl
+            pathPrefix
             title
+            titleAlt
             description
+            banner
+            siteLanguage
             author
+            location
+            ogLanguage
           }
         }
       }
@@ -31,6 +38,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          name: `image`,
+          content: site.siteMetadata.banner,
         },
         {
           property: `og:title`,
